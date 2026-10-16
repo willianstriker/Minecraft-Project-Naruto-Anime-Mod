@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TLauncher: qual versão abrir? (resposta definitiva)</title>
+</head>
+<body style="margin:0;background:#0f1115;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#e8e8ee">
+<div style="max-width:900px;margin:0 auto;padding:26px 18px 70px">
+
+  <div style="background:linear-gradient(135deg,#134e4a,#0f766e);border-radius:16px;padding:24px 26px">
+    <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#99f6e4">TLauncher sem mistério</div>
+    <h1 style="margin:6px 0 8px;font-size:27px;line-height:1.2">Devo abrir a versão normal ou criar um Modpack?</h1>
+    <div style="color:#ccfbf1;font-size:14.5px;line-height:1.6">
+      Resposta curta: <b>NENHUM dos dois do jeito que você fez.</b><br>
+      Você precisa abrir a versão que tem <b>"Forge"</b> no nome — e o mod vai numa pasta só sua.
+    </div>
+  </div>
+
+  <!-- COMPARAÇÃO -->
+  <div style="margin-top:22px;background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:20px">
+    <div style="font-size:17px;font-weight:800;margin-bottom:14px">🎯 As 3 opções, comparadas</div>
+    <table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:2px solid #2a2f3a">
+        <th style="text-align:left;padding:10px 8px;color:#8b93a3">O que você escolhe</th>
+        <th style="text-align:left;padding:10px 8px;color:#8b93a3">Mods funcionam?</th>
+        <th style="text-align:left;padding:10px 8px;color:#8b93a3">Onde vai o mod</th>
+      </tr>
+      <tr style="border-bottom:1px solid #23262e">
+        <td style="padding:12px 8px"><b style="color:#f87171">❌ Release 26.3</b><br><span style="color:#8b93a3;font-size:12px">(versão normal)</span></td>
+        <td style="padding:12px 8px"><b style="color:#f87171">NÃO</b> — é o jogo puro, sem Forge</td>
+        <td style="padding:12px 8px;color:#8b93a3">não carrega nada</td>
+      </tr>
+      <tr style="border-bottom:1px solid #23262e;background:#0f1f1a">
+        <td style="padding:12px 8px"><b style="color:#4ade80">✅ forge-26.3-66.0.12</b><br><span style="color:#8b93a3;font-size:12px">(aparece na lista de versões)</span></td>
+        <td style="padding:12px 8px"><b style="color:#4ade80">SIM</b> — é o jeito recomendado</td>
+        <td style="padding:12px 8px"><code style="background:#0d1117;padding:3px 7px;border-radius:5px;color:#4ade80">.minecraft/mods</code></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 8px"><b style="color:#fbbf24">⚠️ Modpack criado por você</b><br><span style="color:#8b93a3;font-size:12px">(aba Mod-packs)</span></td>
+        <td style="padding:12px 8px">SIM, mas dá mais confusão</td>
+        <td style="padding:12px 8px"><code style="background:#0d1117;padding:3px 7px;border-radius:5px;color:#fbbf24">.minecraft/versions/<br>&nbsp;&nbsp;&lt;nome-do-modpack&gt;/mods</code><br><span style="color:#f87171;font-size:12px">← provavelmente foi aqui que você tentou</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- RECOMENDACAO -->
+  <div style="margin-top:20px;background:#0f1f1a;border:2px solid #4ade80;border-radius:14px;padding:20px">
+    <div style="font-size:18px;font-weight:800;color:#4ade80;margin-bottom:10px">✅ Faça assim (o caminho mais simples)</div>
+    <div style="font-size:14.5px;line-height:1.9;color:#d1fae5">
+      <b>NÃO crie modpack.</b> Use a versão <b>Forge</b> da lista de versões do TLauncher.<br>
+      Assim, o mod vai em <b>uma pasta só</b> e funciona igual à maioria dos tutoriais.
+    </div>
+  </div>
+
+  <!-- PASSO A PASSO -->
+  <div style="margin-top:26px">
+    <div style="font-size:19px;font-weight:700;margin-bottom:12px">🔧 Passo a passo (começando do zero)</div>
+
+    <!-- passo 1 -->
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-bottom:12px">
+      <div style="font-weight:700;color:#7dd3fc;margin-bottom:8px">1️⃣ Veja se o Forge já está instalado no TLauncher</div>
+      <div style="font-size:14px;line-height:1.8;color:#c9cdd6">
+        Abra o TLauncher e olhe a <b>lista de versões</b> (a que tem "Release 26.3", snapshots, etc.).<br>
+        Procure por algo com <b>forge-26.3</b> no nome.
+        <div style="display:flex;gap:12px;margin:14px 0;flex-wrap:wrap">
+          <div style="flex:1;min-width:250px;background:#0d1117;border:2px solid #4ade80;border-radius:10px;padding:12px">
+            <div style="color:#4ade80;font-weight:700;font-size:13px;margin-bottom:8px">✅ ACHOU na lista?</div>
+            <div style="font-family:ui-monospace,monospace;font-size:12px;color:#c9d1d9;line-height:1.8">
+              Release 26.3<br>
+              <b style="color:#4ade80">forge-26.3-66.0.12</b> ← selecione ESTA
+            </div>
+          </div>
+          <div style="flex:1;min-width:250px;background:#0d1117;border:2px solid #fbbf24;border-radius:10px;padding:12px">
+            <div style="color:#fbbf24;font-weight:700;font-size:13px;margin-bottom:8px">⚠️ NÃO achou?</div>
+            <div style="font-size:12.5px;color:#a8a29e;line-height:1.7">Só tem "Release 26.3"? Então o Forge <b>não está instalado</b> →
+            faça o <b>Passo Extra</b> no fim desta página primeiro.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- passo 2 -->
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-bottom:12px">
+      <div style="font-weight:700;color:#7dd3fc;margin-bottom:8px">2️⃣ Abra o jogo UMA VEZ com a versão Forge (e depois feche)</div>
+      <div style="font-size:14px;line-height:1.8;color:#c9cdd6">
+        Selecione <b>forge-26.3-66.0.12</b> na lista e clique em <b>Play / Jogar</b>.<br>
+        Espere chegar no menu principal e depois <b>feche o jogo</b>.<br>
+        <span style="color:#8b93a3">Isso é importante: é nesse primeiro abrir que o jogo cria a pasta <code style="background:#0d1117;padding:2px 6px;border-radius:5px">mods</code> pra você.</span>
+      </div>
+    </div>
+
+    <!-- passo 3 -->
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-bottom:12px">
+      <div style="font-weight:700;color:#7dd3fc;margin-bottom:8px">3️⃣ Abra a pasta certa (não adivinhe o caminho!)</div>
+      <div style="font-size:14px;line-height:1.8;color:#c9cdd6">
+        No TLauncher, clique no <b>ícone de pasta 📁</b> (fica perto do botão de mods/TL Mods, no canto).<br>
+        Isso abre o <b>.minecraft que o TLauncher realmente usa</b> — mesmo que ele seja diferente do padrão.
+        <div style="background:#0d1117;border:1px solid #30363d;border-radius:10px;padding:14px;margin-top:12px;font-family:ui-monospace,monospace;font-size:12.5px;line-height:1.9;color:#c9d1d9">
+          📁 .minecraft/&nbsp;&nbsp;<span style="color:#8b93a3">← a pasta que abriu</span><br>
+          &nbsp;&nbsp;├── 📁 <b style="color:#4ade80">mods</b>&nbsp;&nbsp;<span style="color:#8b93a3">← entre aqui</span><br>
+          &nbsp;&nbsp;├── 📁 saves&nbsp;&nbsp;<span style="color:#8b93a3">(seus mundos)</span><br>
+          &nbsp;&nbsp;├── 📁 logs&nbsp;&nbsp;<span style="color:#8b93a3">(onde fica o latest.log)</span><br>
+          &nbsp;&nbsp;├── 📁 versions&nbsp;&nbsp;<span style="color:#f87171">← ❌ NÃO coloque o mod aqui</span><br>
+          &nbsp;&nbsp;└── 📄 options.txt
+        </div>
+      </div>
+    </div>
+
+    <!-- passo 4 -->
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-bottom:12px">
+      <div style="font-weight:700;color:#7dd3fc;margin-bottom:8px">4️⃣ Coloque o arquivo .jar na pasta mods</div>
+      <div style="font-size:14px;line-height:1.8;color:#c9cdd6">
+        Copie <code style="background:#0d1117;padding:3px 7px;border-radius:5px;color:#4ade80">narutoanimemod-26.3-v0.1.0.jar</code> para dentro de <b>mods</b>.<br><br>
+        <b style="color:#fbbf24">Confira 3 coisas:</b><br>
+        • O arquivo termina em <b>.jar</b> (se terminar em .zip, extraia antes)<br>
+        • O nome está normal (não renomeie para "narutomod" ou coisa assim)<br>
+        • Não está dentro de nenhuma subpasta
+      </div>
+    </div>
+
+    <!-- passo 5 -->
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px">
+      <div style="font-weight:700;color:#7dd3fc;margin-bottom:8px">5️⃣ Abra o jogo de novo (pela versão Forge) e confira os 3 sinais</div>
+      <div style="font-size:14px;line-height:1.8;color:#c9cdd6">
+        <div style="background:#0d1117;border-left:3px solid #4ade80;border-radius:8px;padding:14px 16px;margin-top:10px;line-height:2">
+          <b style="color:#4ade80">SINAL 1</b> — No menu principal, canto <b>inferior esquerdo</b>: tem que aparecer<br>
+          <span style="font-family:ui-monospace,monospace;font-size:12.5px">Minecraft 26.3 / <b style="color:#4ade80">Forge 66.0.12</b></span><br><br>
+          <b style="color:#4ade80">SINAL 2</b> — Clique no botão <b>"Mods"</b> do menu: tem que aparecer <b>Naruto Anime Mod</b><br><br>
+          <b style="color:#4ade80">SINAL 3</b> — Entre num mundo e aperte <b>C</b>: aparece mensagem no chat
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PASSO EXTRA: INSTALAR FORGE -->
+  <div style="margin-top:30px;background:#0f172a;border:1px solid #1e40af;border-radius:14px;padding:20px">
+    <div style="font-size:17px;font-weight:800;color:#60a5fa;margin-bottom:12px">🛠️ Passo Extra — instalar o Forge 26.3 (se não achou na lista)</div>
+    <div style="font-size:14px;line-height:1.9;color:#cbd5e1">
+      <div style="background:#0d1117;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px;line-height:2.1">
+        <b>1.</b> Baixe o instalador (é um arquivo .jar de ~4 MB):<br>
+        <span style="font-family:ui-monospace,monospace;font-size:11.5px;color:#7dd3fc;word-break:break-all">https://maven.minecraftforge.net/net/minecraftforge/forge/26.3-66.0.12/forge-26.3-66.0.12-installer.jar</span><br><br>
+        <b>2.</b> Dê <b>2 cliques</b> nele. Se o Windows perguntar com que programa abrir, escolha o <b>Java</b>.<br>
+        <span style="color:#93c5fd;font-size:13px">↳ Se não abrir de jeito nenhum, falta o Java 25: baixe em <b>adoptium.net</b> (Temurin 25) e instale.</span><br><br>
+        <b>3.</b> Na janela do instalador, marque <b>"Install client"</b> e clique nos <b>3 pontinhos (...)</b> para escolher a pasta.<br>
+        <span style="color:#93c5fd;font-size:13px">↳ Aponte para a MESMA pasta .minecraft que o TLauncher usa (a do passo 3).</span><br><br>
+        <b>4.</b> Clique em <b>OK</b> e espere aparecer <i>"Successfully installed"</i>.<br><br>
+        <b>5.</b> <b>Feche e reabra o TLauncher</b> → agora a versão <b>forge-26.3-66.0.12</b> aparece na lista.<br><br>
+        <b>6.</b> Volte para o passo 2 acima. ✅
+      </div>
+    </div>
+  </div>
+
+  <!-- ERRO CLÁSSICO -->
+  <div style="margin-top:26px;background:#1c1917;border:2px solid #f59e0b;border-radius:14px;padding:18px 20px">
+    <div style="font-size:16px;font-weight:800;color:#fbbf24;margin-bottom:10px">🧠 Por que o mod não funcionou nas suas 2 tentativas</div>
+    <div style="font-size:14px;line-height:1.9;color:#e7e5e4">
+      <b>1. Em <code style="background:#0d1117;padding:2px 6px;border-radius:5px">versions/mods</code>:</b> essa pasta não é usada pelo jogo.
+      No TLauncher, `versions/` guarda as <i>versões</i> — cada modpack criado tem uma subpasta própria
+      (<code style="background:#0d1117;padding:2px 6px;border-radius:5px">versions/&lt;nome&gt;/mods</code>), e é por isso que parece que "existe uma pasta mods ali dentro".<br><br>
+      <b>2. Em <code style="background:#0d1117;padding:2px 6px;border-radius:5px">.minecraft/mods</code>:</b> a pasta estava certa! Mas se você abriu o jogo em
+      <b>Release 26.3</b> (sem Forge), o Minecraft <b>ignora completamente</b> qualquer mod. É como colocar gasolina num carro elétrico. 😄<br><br>
+      <b style="color:#4ade80">A regra de ouro:</b> mods só funcionam se o jogo estiver rodando com <b>Forge</b>.
+      Sempre confira o canto inferior esquerdo do menu antes de achar que o mod está com problema.
+    </div>
+  </div>
+
+  <div style="margin-top:26px;text-align:center;color:#6b7280;font-size:13px;line-height:1.9">
+    Depois de fazer isso, entre num mundo e aperte <b style="color:#ffb347">C</b> → <b style="color:#ffb347">C-V</b> → <b style="color:#ffb347">C-V-V segurando o V</b> (Rasengan 💥)<br>
+    Qualquer coisa, me manda um print do canto inferior esquerdo do menu que eu te digo na hora se o Forge está ativo.
+  </div>
+
+</div>
+</body>
+</html>
