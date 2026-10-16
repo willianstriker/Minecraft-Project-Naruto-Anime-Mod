@@ -10,10 +10,29 @@ Sistema de ativação de jutsus por **combinação de teclas C / V / B** — sem
 ![Forge](https://img.shields.io/badge/Forge-66.0.12-orange)
 ![Java](https://img.shields.io/badge/Java-25-blue)
 ![Status](https://img.shields.io/badge/status-alfa-yellow)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+### 📥 [**BAIXAR A ÚLTIMA VERSÃO**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest)
+
+[![Release](https://img.shields.io/github/v/release/willianstriker/Minecraft-Project-Naruto-Anime-Mod?label=vers%C3%A3o&color=blue)](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest)
 
 </div>
 
 ---
+
+## 📥 Download
+
+| Arquivo | Para que serve |
+|---|---|
+| [**narutoanimemod-26.3-v0.1.0.jar**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest) | ⭐ **É este que vai na pasta `mods/`** |
+| [**NarutoAnimeMod-26.3-v0.1.0.zip**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest) | Pacote completo: mod + créditos + guia de instalação |
+
+> Página de todas as versões: [**Releases**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases)
+>
+> ⚠️ O `.zip` **não** vai na pasta `mods/` — o Minecraft só lê `.jar`. Extraia o zip ou baixe o jar direto.
+
+---
+
 
 ## 📖 Sobre
 
