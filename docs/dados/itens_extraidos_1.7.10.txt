@@ -1,0 +1,892 @@
+itemSusanoo	Mangekyou Sharingan: Susano'o
+itemSusanoo2	Mangekyou Sharingan: Sussano'o
+itemTsukuyomi	Mangekyou Sharingan: Tsukuyomi
+itemKama	Mangekyou Sharingan: Kama
+itemKamui	Mangekyou Sharingan: Kamui
+SharinganCrows	Sharingan: Self Crows Genjutsu
+SharinganSusanoo	Mangekyou Sharingan: Susano'o
+SharinganImperfectSusanoo	Mangekyou Sharingan: Imperfect Susano'o
+ItemEternalSharingan	Eternal Mangekyou Sharingan
+ItemBeer	Beer
+ItemSharingan1	Kekkei Genkai: Sharingan
+ItemSharingan3	Kekkei Genkai: Mangekyou Sharingan
+ItemADevil	Appetite Devil
+ItemWoodStyle	Kekkei Genkai: Wood-Style
+SummonTurtle	Summoning: Ningame
+SummonFrog	Summoning: Gamakichi
+SummonChameleon	Summoning: Shiromari
+SummonCrocodile	Summoning: Borimaru
+SummonCrow	Summoning: Takakuro
+SummonCrab	Summoning: Gandaru
+SummonSeaGull	Summoning: Yorimasu
+SummonSnake	Summoning: Manda
+SummonGiantOx	Summoning: Giant Ox
+SummonGiantBird	Summoning: Giant Bird
+SummonGiantCentipede	Summoning: Giant Centipede
+SummonGiantPanda	Summoning: Giant Panda
+SummonGiantRhsasukethelast	Summoning: Giant Rhsasukethelast
+SummonGiantSnakeTailedChameleon	Summoning: Giant Snake-Tailed Chameleon
+SummonGiantCrustacean	Summoning: Giant Crustacean
+SummonGiantDog	Summoning: Giant Dog
+ItemWarmBeer	Ruined Beer
+ItemHalfAliterOfBeer	Half A Liter Of Beer
+ItemTheBoot	THE BOOT
+ItemDuvel	Duvel
+ItemWodka	Wodka
+ItemHighGradeWodka	High Grade Wodka
+ItemRhum	Rhum
+ItemHighGradeRhum	High Grade Rhum
+ItemDarkRhum	Dark Rhum
+ItemHighGradeDarkRhum	High Grade Dark Rhum
+ItemWhiskey	Whiskey
+ItemHighGradeWhiskey	High Grade Whiskey
+ItemSake	Sake
+ItemHighGradeSake	High Grade Sake
+ItemWarmSake	Warm Sake
+ItemHighGradeWarmSake	High Grade Warm Sake
+ItemShot	Shot
+ItemLiquor	Liquor
+ItemHighGradeLiquor	High Grade Liquor
+ItemMugOBeer	Mug o'Beer
+ItemBigMugOBeer	Big Mug o'Beer
+ItemAmaterasu	Mangekyou Sharingan: Amaterasu
+ItemSharingan	Kekkei Genkai: Mangekyou Sharingan
+ItemSharingan2	Kekkei Genkai: Mangekyou Sharingan
+ItemRinnegan	Kekkei Genkai: Rinnegan
+ItemIntimidation	Intimidation
+ItemTsukuyomi	Mangekyou Sharingan: Tsukuyomi
+ItemKnocking	Knocking
+ItemEdoTensei	Forbidden Technique: Edo-Tensei
+KageBunshin	Forbidden Technique: Kage-Bunshin
+ItemSharinganSRinnegan	Rinne-Sharingan
+ItemShadowStyle	Hidden Technique: Shadow-Style
+ItemInsectStyle	Secret Technique: Insect-Style
+helmetTest	Akatsuki Hat
+helmetAnbu1	Anbu Mask
+helmetAnbu2	Anbu Mask
+helmetAnbu3	Anbu Mask
+helmetChuunin	Kazekage Hat
+chestplateTest	Akatsuki Robe
+chestplateAnbu1	Anbu Chest
+chestplateAnbu2	Sage of the Six Paths Robe
+chestplateAnbu3	Anbu Chest
+chestplateChuunin	Kazekage Shirt
+legsTest	Akatsuki Pants
+legsAnbu1	Anbu Pants
+legsAnbu2	Sage of the Six Paths Pants
+legsAnbu3	Anbu Pants
+legsChuunin	Kazekage Pants
+bootsTest	Akatsuki Sandals
+bootsAnbu1	Anbu Sandals
+bootsAnbu2	Sage of the Six Paths Sandals
+bootsAnbu3	Anbu Sandals
+bootsChuunin	Kazekage Boots
+ItemKaguyaBone	Sternum
+ItemKaguyaBone2	Larch Sword
+KaguyaClanItem	Shikotsumyaku
+IburiClanItem	Kekkei Genkai: Iburi
+ItemSmokeFist	Smoke Fist
+ItemBodyFlickerTechnique	Body Flicker Technique
+ItemChakraEnhancedStrength	Chakra Enhanced Strength Technique
+KuramaClanItem	Kekkei Genkai: Kurama
+EightGatesItem	Forbidden Jutsu: Eight Inner Gates
+SteelReleaseItem	Kekkei Genkai: Steel Release
+ByakuganItem	Kekkei Genkai: Byakugan
+TenseiganItem	Kekkei Genkai: Tenseigan
+EarthReleaseItem	Nature Release: Earth-Style
+FireReleaseItem	Nature Release: Fire-Style
+WindReleaseItem	Nature Release: Wind-Style
+WaterReleaseItem	Nature Release: Water-Style
+LightningReleaseItem	Nature Release: Lightning-Style
+YinReleaseItem	Nature Release: Yin-Style
+YangReleaseItem	Nature Release: Yang-Style
+YinYangReleaseItem	Nature Release: Yin-Yang-Style
+BlazeReleaseItem	Kekkei Genkai: Blaze Release
+BoilReleaseItem	Kekkei Genkai: Boil Release
+CrystalReleaseItem	Kekkei Genkai: Crystal Release
+DustReleaseItem	Kekkei Tota: Dust Release
+ExplosionReleaseItem	Kekkei Genkai: Explosion Release
+IceReleaseItem	Kekkei Genkai: Ice Release
+LavaReleaseItem	Kekkei Genkai: Lava Release
+MagnetReleaseItem	Kekkei Genkai: Magnet Release
+ScorchReleaseItem	Kekkei Genkai: Scorch Release
+StormReleaseItem	Kekkei Genkai: Storm Release
+DarkReleaseItem	Kekkei Genkai: Dark Release
+ExplosiveClayItem	Secret Technique: Explosive Clay
+HiddenSoundItem	Secret Technique: Sound Release
+InuzukaClanItem	Secret Technique: Inuzuka
+PuppetStyleItem	Secret Technique: Puppet Style
+SamuraiItem	Samurai
+JinshuurikiItem	Jinshuriki
+SageModeItem	Sage Mode
+chestplateJinshuriki	Akatsuki Robe
+legsJinshuriki	Akatsuki Pants
+helmetJinshuriki	Akatsuki Collar
+bootsJinshuriki	Akatsuki Sandals
+chestplateJounin	Sasuke The Last Poncho
+legsJounin	Sasuke The Last Pants
+bootsJounin	Sasuke The Last Boots
+helmetJounin	Sasuke The Last Headband
+JinshurikiTest	Tailed Beast Release
+chestplateJinshuriki2	Mizukage Robe
+legsJinshuriki2	Mizukage Pants
+helmetJinshuriki2	Mizukage Hat
+bootsJinshuriki2	Mizukage Sandals
+Jinshuriki2Test	Jinshuriki Stage2 Unleash
+chestplateChakraMode	Hokage Robe
+legsChakraMode	Hokage Pants
+helmetChakraMode	Hokage Hat
+bootsChakraMode	Hokage Sandals
+ChakraModeTest	Jinshuriki Chakra Mode
+chestplateSixPaths	Neji Shirt
+legsSixPaths	Neji Pants
+helmetSixPaths	Neji Headband
+bootsSixPaths	Neji Sandals
+SixPathsTest	Sage of the Six Paths Mode
+chestplateSixPaths1	Tsuchikage Robe
+legsSixPaths1	Tsuchikage Pants
+helmetSixPaths1	Tsuchikage Hat
+bootsSixPaths1	Tsuchikage Sandals
+SixPaths1Test	Sage of the Six Paths Mode
+chestplateSixPaths2	Sasuke New Gen Shirt
+legsSixPaths2	Sasuke New Gen Pants
+helmetSixPaths2	Empty Protection
+bootsSixPaths2	Sasuke New Gen Sandals
+SixPaths2Test	Sage of the Six Paths Mode
+chestplateSage	Raikage Robe
+legsSage	Raikage Pants
+helmetSage	Raikage Hat
+bootsSage	Raikage Boots
+SageTest	Sage-Mode
+kubikiri	Kubikiribocho
+windblade	Wind Blade
+watercuttingSword	Watercutting Sword
+ItemChidori	Chidori
+ItemThunderBlade	Thunder Blade
+ItemSusanooSword	Susano'o Amaterasu Blade
+ItemHitCombo	Lightning Blade
+BloodlineAwakening	Contributor Awakening
+ChakraNaturePaperPiece	Chakra Nature Paper Piece
+BaseJutsuItem	Chakra Nature Paper
+ChakraNaturePaper	Chakra Nature Paper
+BaseKekkeiGenkaiItem	Bloodline Awakening
+ItemShadowSword	Shadow Sword
+ItemDiamondMinecart	Diamond Minecart
+ChakraRestoreItem	Chakra Scroll Weak
+SharinganTotsukaBlade	Mangekyou Sharingan: Totsuka Blade
+SharinganPerfectSusanoo	Mangekyou Sharingan: Perfect Susano'o
+RinneganLimbo	Rinnegan: Limbo: Border Jail
+RinneganAlmightyPush	Rinnegan: Shinra Tensei
+RinneganAlmightyPull	Rinnegan: Bansho Ten'in
+SixPathsMode	Six Paths Mode
+SharinganUltimateSusanoo	Mangekyou Sharingan: Final Susano'o
+ItemRinnegan1	Rinnegan
+FireReleaseFireBallJutsu	Fire Release: Fire Ball Jutsu
+FireReleasePhoenixFlowerJutsu	Fire Release: Phoenix Flower Jutsu
+FireReleaseFireWall	Fire Release: Flame Wall
+EarthReleaseEarthSpear	Earth Release: Earth Spear
+EarthReleaseEarthWall	Earth Release: Earth Wall
+EarthReleaseSandWaterfallBurial	Earth Release: Sand Waterfall Burial
+LightningRelease10HitCombo	Lightning Release: 10 Hit Combo
+LightningReleaseChidori	Lightning Release: Chidori
+LightningReleaseKirin	Lightning Release: Kirin
+LightningReleaseThunderBlade	Lighting Release: Thunder Blade
+ItemRasengan	Rasengan
+WindReleaseRasengan	Wind Release: Rasengan
+WindReleaseBlade	Wind Release: Wind Blade
+WindReleaseVacuum	Wind Release: Vacuum Blast
+WaterReleaseGreatWaterArm	Water Release: Great Water Arm Technique
+WaterReleaseStormyBlockade	Water Release: Stormy Blockade
+WaterReleaseSword	Water Release: Watercutting Sword
+SubstitutionJutsu	Substitution Jutsu
+SharinganSubstitutionJutsu	Sharingan: Substitution Jutsu
+IburiClanSmokeForm	Iburi Clan: Smoke Form
+WoodReleaseWorld	Wood Release: World Of Trees Wall
+WoodReleaseNativity	Wood Release: Nativity Of A World Of Trees
+WoodReleaseTreeBind	Wood Release: Tree Bind Flourishing Burial
+IburiClanSmokeFist	Iburi Clan: Smoke Fist
+IburiClanSmokeForm2	Iburi Clan: Instant Smoke Form
+IburiClanSmokeGun	Iburi Clan: Smoke Gun
+GateOfDeath	Eight Gates: Gate Of Death
+GateOfHealing	Eight Gates: Gate Of Healing
+GateOfLife	Eight Gates: Gate Of Life
+GateOfLimit	Eight Gates: Gate Of Limit
+GateOfOpening	Eight Gates: Gate Of Opening
+GateOfPain	Eight Gates: Gate Of Pain
+GateOfView	Eight Gates: Gate Of View
+GateOfWonder	Eight Gates: Gate Of Wonder
+KaguyaClanCamellia	Shikotsumyaku: Dance of the Willow
+KaguyaClanFern	Shikotsumyaku: Dance Of The Clematis: Flower
+KaguyaClanFlower	Shikotsumyaku: Dance Of The Camellia
+KaguyaClanVine	Shikotsumyaku: Dance Of The Clematis: Vine
+KaguyaClanBoneWall	Shikotsumyaku: Dance Of The Clematis: Bone Wall
+KaguyaFinalDanceClematisFern	Shikotsumyaku: Dance of the Seedling Fern
+KuramaClanCave	Kurama-Style: Cave Of A Million Bats
+KuramaClanEclipse	Kurama-Style: Illusion Of Eclipse
+KuramaClanHerd	Kurama-Style: Illusion Wolves-Herd
+SteelReleaseBlackPunch	Steel Release: Black-Steel Punch
+SteelReleaseIronClad	Steel Release: IronClad
+SteelReleaseImpervious	Steel Release: Impervious Armor
+KageBunshinMultiMax	Forbidden Jutsu: Multiple Shadow Clone Jutsu
+KageBunshinMulti	Multiple Shadow Clone Jutsu
+KageBunshinSexy	Kage Bunshin: Sexy Clone Jutsu
+WoodClone	Wood Release: Wood Clone
+ItemCT	Rinnegan: Chibaku Tensei
+FireRelease	Fire Release
+LightningRelease	Lightning Release
+WindRelease	Wind Release
+WaterRelease	Water Release
+EarthRelease	Earth Release
+WoodRelease	Wood Release
+KaguyaClan	Kaguya Clan
+SteelRelease	Steel Release
+ExplosiveClay	Explosion Release
+IburiClan	Iburi Clan
+KuramaClan	Kurama Clan
+AburameClan	Aburame Clan
+ExplosiveClaySpiders	Explosion Release: C1-Clay Spiders
+KamuiIntangibility	Mangekyou Sharingan: Kamui Intangibility
+KamuiTeleport	Mangekyou Sharingan: Kamui Space-Time Teleportation
+KunaiItem	Kunai
+KageShurikenJutsu	Kage Bunshin: Shadow Fuuhma Shuriken Jutsu
+ChakraRestoreItem2	Chakra Scroll Medium
+ChakraRestoreItem3	Chakra Scroll Potent
+ChakraRestoreItem4	Chakra Scroll Strong
+KageSmallShurikenJutsu	Kage Bunshin: Shadow Shuriken Jutsu
+KageKunaiJutsu	Kage Bunshin: Shadow Kunai Jutsu
+ShurikenSmallItem	Shuriken
+ShurikenItem	Fuhma Shuriken
+ChakraRecharge	Chakra Charge
+ChakraRechargeUltimate	Health For Chakra Jutsu
+BringerOfDarknessTechnique	Forbidden Jutsu: Bringer Of Darkness Technique
+HealingJutsu	Medical Ninjutsu: Healing Touch
+BaseFireStyle	Nature Release: Fire Style
+BaseEarthStyle	Nature Release: Earth Style
+BaseWaterStyle	Nature Release: Water Style
+BaseLightningStyle	Nature Release: Lightning Style
+BaseWindStyle	Nature Release: Wind Style
+RegularJutsuItem	Regular Jutsu
+RareJutsuItem	Rare Jutsu
+UltimateJutsuItem	Ultimate Jutsu
+FlyingThunderKunaiItem	Flying Thunder God Kunai
+kunai	Kunai
+SenbonItem	Senbon
+RinneganChakraRod	Rinnegan: Chakra Tranceiver
+ShakujoObito1	Shakujo
+ShakujoMadara1	Shakujo
+Gunbai	Gunbai
+samehada	Samehada
+nuibari	Nuibari
+scytheHidan	Jashin Scythe
+kiba	Kiba
+hiramekarei	Hiramekarei
+shibuki	Shibuki
+kabutowari	Kabutowari
+RyoBronze	Bronze Ryo
+RyoSilver	Silver Ryo
+RyoGold	Gold Ryo
+undefinedDNA	Undefined DNA
+WorldMystery	World Mystery
+ChidoriSenbonItem	Chidori Senbon
+CrystalDragonItem	Crystal Release: Tearing Crystal Falling Dragon
+SteelReleaseAssimilationShrapnel	Steel Release: Assimilation Shrapnel
+WaterReleaseWaterSharkJutsu	Water Release: Water Shark Bullet Technique
+WaterReleaseHiddenMist	Kirigakure Style: Hiding in Mist Technique
+RasenShurikenItem	Wind Release: Rasenshuriken
+EarthReleaseSandBurial	Earth Release: Sand Burial
+EarthReleaseEarthGolemItem	Earth Release: Earth Golem
+FireReleaseGreatFireAnnihilation	Fire Release: Great Fire Annihilation
+LightningBallItem	Lightning Release: Lightning Ball
+LavaReleaseChakraMode	Lava Release: Chakra Mode
+LavaReleaseStreamRockTechnique	Lava Release: Scorching Stream Rock Technique
+LavaReleaseExpandingFlameRings	Lava Release: Expanding Flame Rings
+LavaReleaseAshStone	Lava Release: Ash Stones Seal Technique
+LavaReleaseCongealing	Lava Release: Quicklime Congealing Technique
+ScorchReleaseExtremelySteamingMurder	Scorch Release: Extremely Steaming Murder
+ScorchReleaseIncineratingFlare	Scorch Release: Incinerating Flare Technique
+SixPathsCTItem	Six Paths: Chibaku Tensei
+RinneganUnivPullItem	Rinnegan: Universal Pull
+ScorchReleaseMultipleFallingSuns	Scorch Release: Multiple Falling Suns
+ScorchReleaseSetup	Scorch Release: Ring of Suns
+ScorchReleaseHeath	Scorch Release: Suns Heath Vortex Meadow
+WoodReleaseTallTrees	Wood Release: Tall Trees
+WoodReleaseCutting	Wood Release: Cutting Technique
+WoodReleasePillarPrison	 Wood Release: Four-Pillar Prison Technique
+LightningReleaseChidoriNagashi	Lightning Release: Chidori Nagashi
+LightningReleaseChidoriSharpSpear	Lightning Release: Chidori Sharp Spear
+BoilReleaseUnrivalledStrength	Boil Release: Unrivalled Strength
+BoilReleasePropulsionFist	Boil Release: Erupting Propulsion Fist
+BoilReleaseSkilledMistTechnique	Boil Release: Skilled Mist Technique
+BoilReleaseFlowerRepentanceTechnique	Boil Release: Flower Repentance Technique
+BoilReleaseMeltdown	Boil Release: Meltdown
+SharinganKagutsuchiBow	Inferno Release: Susano'o Kagutsuchi Bow
+SharinganKagutsuchiFallingSwordsItem	Inferno Release: Susano'o Flame Control
+SharinganKagutsuchiFlameControl	Inferno Release: Flame Control
+SharinganKagutsuchiFlameWrappingFire	Inferno Release: Flame Wrapping Fire
+MagnetReleaseIronDrizzle	Magnet Release: Iron Sand Drizzle
+MagnetReleaseDesertSuspension	Magnet Release: Desert Suspension
+MagnetReleaseGoldDust2	Magnet Release: Gold Dust Imperial Funeral
+MagnetReleaseGoldDust	Magnet Release: Iron Sand Gathering Assault
+MagnetReleaseGoldPush	Magnet Release: Gold Push
+StormReleaseDemonStorm	Storm Release: Demon Dragon Storm
+StormReleaseDemon	Storm Release: Demon Storm
+StormReleaseBlackHunting	Storm Release: Black Hunting
+StormReleaseInnerWave	Storm Release: Thunder Cloud Inner Wave
+StormReleaseLaserCircus	Storm Release: Laser Circus
+IceReleaseIcePrisonTechnique	Ice Release: Ice Prison Technique
+IceReleaseIceNeedles	Ice Release: Ice Needles
+IceReleaseIceDragon	Ice Release: Twin Dragon Blizzard
+IceReleaseDemonicIceMirrors	Ice Release: Demonic Mirroring Ice Crystals
+IceReleaseDome	Ice Release: Ice Rock Dome of Magnificent Nothingness
+SamehadaIcon	Samehada
+SharinganKamuiBounce	Kamui: Bounce
+SharinganCoercion	Sharingan: Coercion
+SharinganGenjutsuCrows	Sharingan: Crows Genjutsu
+InfernoGreatFireItem	Inferno Release: Great Fireball Jutsu
+KagutsuchiSword	Inferno Release: Sword of Kagutsuchi
+kusanagi	Kusanagi
+kusanagi2	Kusanagi
+NaraClanShadowImitationTechnique	Hiden Jutsu: Shadow Imitation Technique
+NaraClanBlackSpiderLily	Hiden Jutsu: Black Spider Lily
+ExplosionReleaseC3	Explosion Release: C3
+ExplosiveClayBirds	Explosion Release: C1-Clay Birds
+ExplosionReleaseExplodingPalm	Explosion Release: Exploding Palm
+ExplosionReleaseLandmineFist	Explosion Release: Landmine Fist
+SteelReleaseSteelProjectile	Steel Release: Steel Projectile
+SteelReleaseSteelShield	Steel Release: Steel Shield Technique
+ItemCrystalBlade	Crystal Release: Jade Crystal Blade
+CrystalReleaseCrystalNeedles	Crystal Release: Crystal Needles
+CrystalReleaseCrystalArmor	Crystal Release: Crystal Armor
+RinneganChakraRods	Rinnegan: Chakra Rods
+silverBladei	White Light Chakra Sabre
+lightningBladei	Sword of the Thunder God
+katana7i	Katana
+katanai	Katana
+tantoi	Tanto
+tantoStonei	Stone Tanto
+cleaveri	Cleaver Sword
+CrystalReleaseCrimsonFruit	Crystal Release: Crimson Fruit
+SummonGamakichi	Summoning: Gamakichi
+SummonGamabunta	Summoning: Gamabunta
+SummonKatsuyu	Summoning: Katsuyu
+SummonAoda	Summoning: Aoda
+SummonManda	Summoning: Manda
+HelmetFinalAnbu	Anbu Mask with Cap
+ChestplateFinalAnbu	Anbu Robe
+LegsFinalAnbu	Anbu Pants
+BootsFinalAnbu	Anbu Boots
+HelmetGenin	Konoha Headband
+ChestplateGenin	Genin Shirt
+LegsGenin	Genin Pants
+BootsGenin	Genin Sandals
+HelmetSound	Sound Headband
+ChestplateSound	Sound Shirt
+LegsSound	Sound Pants
+BootsSound	Sound Sandals
+helmetLeafJounin	Leaf Headband
+chestplateLeafJounin	Leaf Flak Jacket
+legsLeafJounin	Leaf Jonin Pants
+bootsLeafJounin	Leaf Jonin Sandals
+helmetKazeJounin	Sand Headband
+chestplateKazeJounin	Sand Flak Jacket
+legsKazeJounin	Sand Jonin Pants
+bootsKazeJounin	Sand Jonin Sandals
+helmetMizuJounin	Mist Headband
+chestplateMizuJounin	Mist Flak Jacket
+legsMizuJounin	Mist Jonin Pants
+bootsMizuJounin	Mist Jonin Sandals
+helmetTsuJounin	Stone Headband
+chestplateTsuJounin	Stone Flak Jacket
+legsTsuJounin	Stone Jonin Pants
+bootsTsuJounin	Stone Jonin Sandals
+helmetRaiJounin	Cloud Headband
+chestplateRaiJounin	Cloud Flak Jacket
+legsRaiJounin	Cloud Jonin Pants
+bootsRaiJounin	Cloud Jonin Sandals
+helmetUchiha	Uchiha Collar
+chestplateUchiha	Uchiha Robe
+legsUchiha	Uchiha Pants
+bootsUchiha	Uchiha Sandals
+helmetSenju	Senju Collar
+chestplateSenju	Senju Chestplate
+legsSenju	Senju Pants
+bootsSenju	Senju Sandals
+helmetmaskedman	Mask
+chestplatemaskedman	Masked Man Robe
+legsmaskedman	Masked Man Pants
+bootsmaskedman	Masked Man Sandals
+helmetObitoMask2	Mask
+chestplateObitoMask2	Obito Robe
+legsObitoMask2	Obito Pants
+bootsObitoMask2	Obito Sandals
+chestplatekimimaro	Kimimaro Robe
+legskimimaro	Kimimaro Pants
+bootskimimaro	Kimimaro Sandals
+helmetSasuke	Sasuke War Collar
+chestplateSasuke	Sasuke War Shirt
+legsSasuke	Sasuke War Pants
+bootsSasuke	Sasuke War Sandals
+helmetSamurai	Samurai Helmet
+chestplateSamurai	Samurai Chestplate
+legsSamurai	Samurai Legs
+bootsSamurai	Samurai Boots
+helmetKillerB	Killer B Headgear
+chestplateKillerB	Killer B Shirt
+legsKillerB	Killer B Pants
+bootsKillerB	Killer B Sandals
+helmetmenma	Menma Collar
+chestplatemenma	Menma Jacket
+legsmenma	Menma Pants
+bootsmenma	Menma Sandals
+helmetedo	Edo Collar
+chestplateedo	Edo Jacket
+legsedo	Edo Pants
+bootsedo	Edo Sandals
+helmetminatogenin	Anbu Mask
+chestplateminatogenin	Minato Genin Jacket
+legsminatogenin	Minato Genin Pants
+bootsminatogenin	Minato Genin Sandals
+helmetNaruto	Anbu Mask
+chestplateNaruto	Naruto Jacket
+legsNaruto	Naruto Pants
+bootsNaruto	Naruto Sandals
+helmetmadarayoung	Young Madara Collar
+chestplatemadarayoung	Young Madara Robe
+legsmadarayoung	Young Madara Pants
+bootsmadarayoung	Young Madara Sandals
+helmetrin	Empty Headgear
+chestplaterin	Rin Jacket
+legsrin	Rin Pants
+bootsrin	Rin Sandals
+helmetcloud	Cloud Collar
+chestplatecloud	Cloud Flak Jacket
+legscloud	Cloud Pants
+bootscloud	Cloud Sandals
+helmetyamato	Headband Yamato
+chestplateyamato	Leaf Flak Jacket
+legsyamato	Leaf Pants
+bootsyamato	Leaf Sandals
+helmetRoshi	Roshi Headwear
+chestplateRoshi	Roshi Shirt
+legsRoshi	Roshi Pants
+bootsRoshi	Roshi Sandals
+helmetdeidara	Headband
+chestplatedeidara	Deidara Shirt
+legsdeidara	Deidara Pants
+bootsdeidara	Deidara Sandals
+helmetino	Anbu Mask
+chestplateino	Ino Shirt
+legsino	Ino Pants
+bootsino	Ino Sandals
+helmetHan2	Han Headwear
+chestplateHan2	Han Jacket
+legsHan2	Han Pants
+bootsHan2	Han Sandals
+helmetHaku	Anbu Mask
+chestplateHaku	Haku Robe
+legsHaku	Haku Pants
+bootsHaku	Haku Sandals
+helmethinatathelast	Empty Headwear
+chestplatehinatathelast	Hinata The Last Shirt
+legshinatathelast	Hinata The Last Pants
+bootshinatathelast	Hinata The Last Sandals
+helmetnarutothelast	Naruto The Last Headband
+chestplatenarutothelast	Naruto The Last Jacket
+legsnarutothelast	Naruto The Last Pants
+bootsnarutothelast	Naruto The Last Sandals
+helmetsasukethelast	Sasuke The Last Headband
+chestplatesasukethelast	Sasuke The Last Jacket
+legssasukethelast	Sasuke The Last Pants
+bootssasukethelast	Sasuke The Last Sandals
+helmetsarada	Sarada Glasses
+chestplatesarada	Sarada Jacket
+legssarada	Sarada Pants
+bootssarada	Sarada Sandals
+helmetsakura2	Anbu Mask
+chestplatesakura2	Sakura Jacket
+legssakura2	Sakura Pants
+bootssakura2	Sakura Sandals
+helmetshikamaruyoung	Anbu Mask
+chestplateshikamaruyoung	Shikamaru Young Jacket
+legsshikamaruyoung	Shikamaru Young Pants
+bootsshikamaruyoung	Shikamaru Young Sandals
+helmetsasukertr	Sasuke Road To Ninja Collar
+chestplatesasukertr	Sasuke Road To Ninja Jacket
+legssasukertr	Sasuke Road To Ninja Pants
+bootssasukertr	Sasuke Road To Ninja Sandals
+helmettobirama	Tobirama Collar
+chestplatetobirama	Tobirama Jacket
+legstobirama	Tobirama Pants
+bootstobirama	Tobirama Sandals
+helmetsasuke2	Sasuke Young Collar
+chestplatesasuke2	Sasuke Young Jacket
+legssasuke2	Sasuke Young Pants
+bootssasuke2	Sasuke Young Sandals
+helmetsasori	Sasori Collar
+chestplatesasori	Sasori Jacket
+legssasori	Sasori Pants
+bootssasori	Sasori Sandals
+helmetsakura	Sakura Young Headband
+chestplatesakura	Sakura Young Jacket
+legssakura	Sakura Young Pants
+bootssakura	Sakura Young Sandals
+helmetneji2	Anbu Mask
+chestplateneji2	Neji Jacket
+legsneji2	Neji Pants
+bootsneji2	Neji Sandals
+helmethinata	Hinata Collar
+chestplatehinata	Hinata Jacket
+legshinata	Hinata Pants
+bootshinata	Hinata Sandals
+helmetlee	Anbu Mask
+chestplatelee	Lee Jacket
+legslee	Lee Pants
+bootslee	Lee Sandals
+helmetkisame	Kisame Headwear
+chestplatekisame	Kisame Jacket
+legskisame	Kisame Pants
+bootskisame	Kisame Sandals
+helmetasura	Asura Collar
+chestplateasura	Asura Jacket
+legsasura	Asura Pants
+bootsasura	Asura Sandals
+helmetobito4	Tobi Mask
+chestplateobito4	Tobi Jacket
+legsobito4	Tobi Pants
+bootsobito4	Tobi Sandals
+helmetobito3	Obito Collar
+chestplateobito3	Obito Jacket
+legsobito3	Obito Pants
+bootsobito3	Obito Sandals
+helmetmadara	Madara Collar
+chestplatemadara	Madara Jacket
+legsmadara	Madara Pants
+bootsmadara	Madara Sandals
+helmetObitoYoung	Obito Young Glasses
+chestplateObitoYoung	Obito Young Jacket
+legsObitoYoung	Obito Young Pants
+bootsObitoYoung	Obito Young Sandals
+helmetYugito	Anbu Mask
+chestplateYugito	Yugito Jacket
+legsYugito	Yugito Pants
+bootsYugito	Yugito Sandals
+helmetYaguro	Anbu Mask
+chestplateYaguro	Yaguro Jacket
+legsYaguro	Yaguro Pants
+bootsYaguro	Yaguro Sandals
+helmettsuchikage	Muu Bandages Face
+chestplatetsuchikage	Muu Bandages Body
+legstsuchikage	Muu Bandages Legs
+bootstsuchikage	Muu Bandages Feet
+helmetchoji	Anbu Mask
+chestplatechoji	Choji Jacket
+legschoji	Choji Pants
+bootschoji	Choji Sandals
+helmetkabuto	Kabuto Cap
+chestplatekabuto	Kabuto Robe
+legskabuto	Kabuto Pants
+bootskabuto	Kabuto Sandals
+helmethikari	Headgear
+chestplatehikari	Jacket
+legshikari	Pants
+bootshikari	Sandals
+helmetgaara	Anbu Mask
+chestplategaara	Gaara Jacket
+legsgaara	Gaara Pants
+bootsgaara	Gaara Sandals
+helmetboruto	Headband
+chestplateboruto	Boruto Jacket
+legsboruto	Boruto Pants
+bootsboruto	Boruto Sandals
+helmetzabuza3	Zabuza Headband
+chestplatezabuza3	Zabuza Jacket
+legszabuza3	Zabuza Pants
+bootszabuza3	Zabuza Sandals
+helmetzabuza	Zabuza Headband TEST
+chestplatezabuza	Zabuza Jacket TEST
+legszabuza	Zabuza Pants TEST
+bootszabuza	Zabuza Sandals TEST
+helmetsasuketaka2	Sasuke Taka Collar
+chestplatesasuketaka2	Sasuke Taka Jacket
+legssasuketaka2	Sasuke Taka Pants
+bootssasuketaka2	Sasuke Taka Sandals
+helmetshisui	Shisui Collar
+chestplateshisui	Shisui Jacket
+legsshisui	Shisui Pants
+bootsshisui	Shisui Sandals
+Pizza	Pizza
+Ramen	Ichiraku's Ramen
+MilitaryPillBlue	Military Pill Blue
+MilitaryPillBrown	Military Pill Brown
+MilitaryPillGreen	Military Pill Green
+MilitaryPillOrange	Military Pill Orange
+MilitaryPillPurple	Military Pill Purple
+MilitaryPillRed	Military Pill Red
+MilitaryPillYellow	Military Pill Yellow
+SpirallingRingItem	Menma Style: Spiralling Ring
+ToadOilBullet	Toad Oil Bullet Technique
+SkillLearnerSharingan	Skill Learner Sharingan
+SkillLearnerWindRelease	Skill Learner Wind Release
+SkillLearnerWaterRelease	Skill Learner Water Release
+SkillLearnerFireRelease	Skill Learner Fire Release
+SkillLearnerEarthRelease	Skill Learner Earth Release
+SkillLearnerLightningRelease	Skill Learner Lightning Release
+SkillLearnerYinRelease	Skill Learner Yin Release
+SkillLearnerYangRelease	Skill Learner Yang Release
+SkillLearnerLavaRelease	Skill Learner Lava Release
+SkillLearnerBoilRelease	Skill Learner Boil Release
+SkillLearnerScorchRelease	Skill Learner Scorch Release
+SkillLearnerMangekyouSharingan	Skill Learner Mangekyou Sharingan
+SkillLearnerStormRelease	Skill Learner Storm Release
+SkillLearnerByakugan	Skill Learner Byakugan
+SkillLearnerRinnegan	Skill Learner Rinnegan
+helmetkidkakashi	Kakashi Young Mask
+chestplatekidkakashi	Kakashi Young shirt
+bootskidkakashi	Kakashi Young sandals
+legskidkakashi	Kakashi Young pants
+GeninExam	Genin Exam Paper
+DQuest	D-Rank Mission
+DEnveloppe	D-Rank Mission Enveloppe
+CQuest	C-Rank Mission
+CEnveloppe	C-Rank Mission Enveloppe
+BQuest	B-Rank Mission
+BEnveloppe	B-Rank Mission Enveloppe
+AQuest	A-Rank Mission
+AEnveloppe	A-Rank Mission Enveloppe
+SQuest	S-Rank Mission
+SEnveloppe	S-Rank Mission Enveloppe
+SSQuest	SS-Rank Mission
+SSEnveloppe	SS-Rank Mission Enveloppe
+HeavenScroll	Heaven Scroll
+EarthScroll	Earth Scroll
+ChuninExams	Chunin Exams
+ChuninExamWinningEmblem	Chunin Exam Winning Emblem
+ExplosionReleaseC2	Explosion Release: C2
+WaterGunshotItem	Water Release: Water Gunshot
+Gunbaii	Gunbai
+scytheHidani	Hidan's Scythe
+KagutsuchiSwordi	Kagutsuchi Sword
+kusanagii	Kusanagi
+kusanagi2i	Kusanagi
+kusanagiii	Kusanagi
+katana4i	Katana
+SNDkatanaI	Katana
+SNDkatana2i	Katana
+woodKatanai	Wood Katana
+katanaGoldi	Gold Katana
+katanaSilveri	Iron Katana
+katanaEmeraldi	Emerald Katana
+katanaDiamondi	Diamond Katana
+katana3i	Katana
+katana5i	Katana
+katana6i	Katana
+SNDkatana2I	Katana
+SmokeBomb	Smoke Bomb
+SummonGiantRhino	Rinnegan Summoning: Giant Rhino
+SummonNinjaZombie	Summoning: Zeromasu
+SummonArmoredNinken	Summoning: Armored Ninken
+SummonLog	Summoning: Rolling Log
+SummonEnderShinobi	Summoning: Slendobi
+SummonNinken	Summoning: 8 Ninken
+MedicalDelicateIllnessExtractionTechnique	Delicate Illness Extraction Technique
+MedicalBodyPathwayDerangement	Body Pathway Derangement Technique
+MedicalChakraScalpel	Chakra Scalpel
+MedicalYinHealingWoundDestruction	Yin Healing Wound Destruction Technique
+MedicalCreationRebirth	Creation Rebirth Technique
+MedicalStrengthOfAHundredSeal	Strength Of A Hundred Seal
+MedicalNinjaArtCreationRebirthSOAHT	Ninja Art: Creation Rebirth-SOAHT
+CurseMandala	Curse Mandala
+KamuiTeleportDimensions	Kamui: Dimension Travel
+KuramaMind	Kurama-Style: Genjutsu mind-Reality
+YangReleaseDomeOfLight	Yang Release: Dome of Light
+YangReleaseSwordsOfLight	Yang Release: Swords of Light
+YangReleaseMultipleSwordsOfLight	Yang Release: Multiple Swords of Light
+YangReleaseFlashOfLight	Yang Release: Flash of Light
+YinReleaseDomeOfDarkness	Yin Release: Dome of Darkness
+YinReleaseSwordsOfDarkness	Yin Release: Swords of Darkness
+YinReleaseMultipleSwordsOfDarkness	Yin Release: Multiple Swords of Darkness
+YinReleaseFlashOfDarkness	Yin Release: Flash of Darkness
+SharinganIzanami	Sharingan: Izanami
+RinneganAmenotejikara	Rinnegan: Amenotejikara
+InuzukaSpawnAkamaru	Inuzuka Dog Companion Control
+LightningReleaseChidoriSenbon	Lightning Release: Chidori Senbon
+RinneganTengaiItem	Rinnegan: Tengai Shinsei
+GreatFireballItem	Fire Release: Great Fireball Jutsu
+WaterBulletItem	Water Release: Water Bullets Jutsu
+BubblesItem	Water Release: Bubbles
+RinneganShuraBlastItem	Rinnegan: Shura Blast
+FlameDragonItem	Fire Release: Flame Dragon
+RashomonItem	Summoning: Rashomon
+WoodDragonItem	Wood Release: Wood Dragon
+WaterDragonItem	Water Release: Water Dragon
+GreatFireballFastItem	Fire Release: Fast Great Fireball Jutsu
+NourishmentJutsu	Nourishment Jutsu
+SandReleaseSandTsunami	Earth Release: Sand Tsunami
+WaterReleaseWaterPrisonJutsu	Water Release: Water Prison Jutsu
+FireReleaseFireRunningJutsu	Fire Release: Fire Running Jutsu
+EarthReleaseShieldOfSand	Earth Release: Shield of Sand
+LightningReleaseLightningMode	Lightning Release: Lightning Mode
+FireReleaseFireBulletJutsu	Fire Release: Fire Bullet Jutsu
+WindReleaseVacuumSphere	Wind Release: Vacuum Sphere
+WindReleaseAirBullets	Wind Release: Air Bullets
+WindReleaseVacuumSerialWaves	Wind Release: Vacuum Serial Waves
+WindReleaseBeastTearingPalm	Wind Release: Beast Tearing Palm
+WindReleaseWindMode	Wind Release: Wind Mode
+ItemUseMana	Item Use Mana
+MatatabiReleaseFireBulletJutsu	Fire Release: Matatabi Fire Bullet Jutsu
+MatatabiReleaseRunningFireJutsu	Fire Release: Matatabi Running Fire Jutsu
+MatatabiPhoenixFlowerJutsu	Fire Release: Matatabi Phoenix Flower Jutsu
+MatatabiGreatFireballFastItem	Fire Release: Matatabi Great Fireball Jutsu
+MatatabiFlameDragonItem	Fire Release: Matatabi Flame Dragon Jutsu
+SkillLearnerWoodRelease	Skill Learner Wood Release
+SkillLearnerMagnetRelease	Skill Learner Magnet Release
+SkillLearnerSteelRelease	Skill Learner Steel Release
+SkillLearnerCrystalRelease	Skill Learner Crystal Release
+SkillLearnerIceRelease	Skill Learner Ice Release
+SkillLearnerExplosionRelease	Skill Learner Explosion Release
+SkillLearnerKurama	Skill Learner Kurama Clan
+SkillLearnerDustRelease	Skill Learner Dust Release
+SkillLearnerYamanaka	Skill Learner Yamanaka Clan
+SkillLearnerUzumaki	Skill Learner Uzumaki Clan
+SkillLearnerShikotsumyaku	Skill Learner Kaguya Clan
+SkillLearnerSarutobi	Skill Learner Sarutobi Clan
+SkillLearnerNara	Skill Learner Nara Clan
+SkillLearnerInuzuka	Skill Learner Inuzuka Clan
+SkillLearnerCurseMark	Skill Learner Curse Mark
+SkillLearnerAkimichi	Skill Learner Akimichi Clan
+SkillLearnerAburame	Skill Learner Aburame Clan
+YamanakaMindBody	Yamanaka: Mind Body Transfer Jutsu
+YamanakaCurse	Yamanaka: Mind Body Curse Puppet Jutsu
+ByakuganGentleFist	Byakugan: Gentle Fist
+ByakuganEightTrigramsVacuumPalm	Byakugan: Eight Trigrams-Vacuum Palm
+SuperExplosionItem	Genjutsu: Clone Explosion
+EyeMedicinePlantSeeds	Eye Plant Seeds
+EyeMedicine	Eye Plant
+SkillLearnerMangekyouKagutsuchi	Skill Learner Mangekyou Sharingan: Kagutsuchi
+CompanionMedal	Companion Medal
+MistServantTechnique	Genjutsu: Mist Servant Technique
+SuperCloneExplosion	Genjutsu: Super Clone Explosion
+GenjutsuBindClone	Genjutsu: Bind Clone
+SharinganShacklingStakesTechnique	Sharingan: Shackling Stakes
+SharinganNegativeConfusion	Sharingan: Negative Confusion
+AQuestTransferDocuments	A-Rank Mission: Transfer Documents
+CEnveloppeEscort	B-Rank Mission: Escort Enveloppe
+CQuestEscort	B-Rank Escort Mission
+Episode1	Storymode
+BQuestTransferDocuments	B-Rank Mission: Transfer Documents
+DQuestBabysitting	D-Rank Mission: Baby Sitting
+AQuestAssassination	A-Rank Mission: Assassination
+BQuestStealDocuments	B-Rank Mission: Steal Documents
+DynamicEntry	Taijutsu: Dynamic Entry
+LeafWhirlwind	Taijutsu: Leaf Whirlwind
+LeafHurricane	Taijutsu: Leaf Hurricane
+StrongFist	Taijutsu: Strong Fist
+EightGates	Taijutsu: Eight Gates
+OneThousandMetrePunch	Taijutsu: One Thousand Meter Punch
+LeafDragonGodItem	Taijutsu: Leaf Dragon God
+FrontLotus	Taijutsu: Front Lotus
+ReverseLotus	Taijutsu: Reverse Lotus
+NightPhoenix	Taijutsu: Night Phoenix
+DaytimeTiger	Taijutsu: Daytime Tiger
+EveningElephant	Taijutsu: Evening Elephant
+NightGuy	Taijutsu: Night Guy
+HeavenCutter	Kenjutsu: Heaven Cutter
+BQuestEscort	B-Rank Escort Mission
+AQuestEscort	A-Rank Escort Mission
+SQuestEscort	S-Rank Escort Mission
+SkilllearnerKetsuryugan	Skill Learner Ketsuryugan
+InuzukaSpawnKuromaru	Inuzuka Dog Companion Control
+SkilllearnerTaijutsu	Skill Learner Taijutsu
+SkilllearnerMedical	Skill Learner Medical Jutsu
+SkilllearnerKenjutsu	Skill Learner Kenjutsu
+LightningReleaseStaticForce	Lightning Release: Static Force
+LightningReleaseLariat	Lightning Release: Lariat
+KetsuryuganExpodingBloodTouch	Ketsuryugan: Exploding Blood Touch
+SkillLearnerKetsuryugan	Skill Learner Ketsuryugan
+KetsuryuganGenjutsu	Ketsuryugan: Genjutsu Mind Destruction
+KetsuryuganGenjutsu2	Ketsuryugan: Genjutsu
+ChinoikeGenjutsu	Ketsuryugan: Genjutsu Exploding Human Technique
+GreatFireBallItem	Fire Release: Great Fireball Jutsu
+FireReleaseRunningFireJutsu	Fire Release: Running Fire Jutsu
+SealedSageScroll	Sealed Sage Scroll
+SkillLearnerIburi	Skill Learner Iburi
+IchaIcha	Icha Icha
+AQuestStealDocuments	A-Rank Steal Documents Mission
+SQuestStealDocuments	S-Rank Steal Documents Mission
+kunaiBomb	Paper Bomb Kunai
+SpawnGeninBoss	Spawn Genin Boss
+SpawnGenin	Spawn Genin
+SpawnQuestGiver	Spawn Quest Giver
+DustReleaseDetachmentWorld	Dust Release: Detachment of the Primitive World
+ItemChibakuTensei	Rinnegan: Chibaku Tensei
+SkillLearnerMatatabi	Skill Learner Matatabi
+BijuuLocation	Tailed Beast Chart
+SkillLearnerMatatabiFireRelease	Skill Learner Matatabi Fire Release
+SkillLearnerSonGoku	Skill Learner Son Goku
+WindReleaseScattering	Wind Release: Scattering
+ChakraSeal	Fuinjutsu: Chakra Seal
+SkillLearnerKokuo	Skill Learner Kokuo
+InuzukaBeastHumanClone	Inuzuka: Beast Human Clone
+BijuuBallItem	Bijuu Bomb
+SkillLearnerIsobu	Skill Learner Isobu
+BeatZabuza	Defeated Zabuza
+WaterReleaseExplodingWaterCollidingWave	Exploding Water Colliding Wave
+SkillLearnerShukaku	Skill Learner Shukaku
+UchihaLetter	Mysterious Sealed Letter
+InuzukaPassingFangOverFang	Inuzuka Style: Passing Fang over Fang
+SkillLearnerSaiken	Skill Learner Saiken
+UchihaLetter2	Letter from Brother
+DeathPossession	Death Controlling Possessed Blood
+TailedBeastContinuousJutsuItem	Tailed Beast Continuous Bombs
+SkillLearnerKurama9	Skill Learner Kurama
+SkillLearnerMangekyouKamui	Skill Learner Mangekyou Sharingan
+PuppetControl1	Puppet Control
+SkillLearnerGyuki	Skill Learner Gyuki
+SkillLearnerChomei	Skill Learner Chomei
+SpawnPain	Spawn Pain
+SpawnShopKeeper	Spawn Shopkeeper
+SpawnMizukage	Spawn Mizukage
+chestplateGenin	Chestplate Genin
+bootsGenin	Boots Genin
+legsGenin	Pants Genin
+helmetGenin	Headband Genin
+DefeatUchihaBrother	Brother's Sharingan
+DefeatKatsuyu	Proof of defeating Katsuyu
+DefeatGamakichi	Proof of defeating Gamakichi
+DefeatManda	Proof of defeating Manda
+SageInsect	Sage Insect
+SageInsectSoup	Sage Soup
+UzumakiHealBite	Uzumaki Heal Bite
+SarutobiAsh	Sarutobi Ash Pile Burning
+NaraNeckBind	Shadow-Neck Binding Technique
+PakunRamen	Pakkun's Special 1500 Subscribers Ramen
+SubsPresent1500	1500 Subscribers Thank you Present
+PoisonBomb	Poison Bomb
+BrooklynrageRamen	BrooklynRage's Special 5000 Subscribers Ramen
+SubsPresent5000	5000 Subscribers Thank you Present
+AburameKikaichuSummon	Aburame Clan: Kikaichu Summon
+AburameInsectBog	Aburame Clan: Insect Bog
+AburameInsectClone	Aburame Clan: Insect Clone
+helmetEaster	Hidden Egg Helmet
+Easter2018CrackedEasterEggBlue	Blue Cracked Easter Egg
+Easter2018CrackedEasterEggGreen	Green Cracked Easter Egg
+Easter2018CrackedEasterEggOrange	Orange Cracked Easter Egg
+Easter2018CrackedEasterEggPurple	Purple Cracked Easter Egg
+Easter2018CrackedEasterEggRed	Red Cracked Easter Egg
+Easter2018CrackedEasterEggYellow	Yellow Cracked Easter Egg
+Easter2018EasterEgg	Chocolate Easter Egg
+Easter2018EasterEggGreen	Green Easter Egg
+Easter2018EasterEggBlue	Blue Easter Egg
+Easter2018EasterEggOrange	Orange Easter Egg
+Easter2018EasterEggPurple	Purple Easter Egg
+Easter2018EasterEggRed	Red Easter Egg
+Easter2018EasterEggYellow	Yellow Easter Egg
+Easter2018EasterToken	Easter Token
+Easter2018Genjutsu	Genjutsu: Eggsorcism
+Easter2018Ninjutsu	Ninjutsu: Unoeuf
+Easter2018Taijutsu	Taijutsu: TamaGO!
+Easter2018Kinjutsu	Kinjutsu: Pandora's Egg
+Easter2018Summon	Summon: Kurousagi
+eastersword	Kurousagi's Blade
+UzumakiAdamantineChains	Uzumaki: Adamantine Sealing Chains
+UzumakiReaperDeathSeal	Uzumaki: Fuinjutsu: Reaper Death Seal
