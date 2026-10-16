@@ -1,12 +1,12 @@
 @echo off
 setlocal EnableDelayedExpansion
-title Naruto Anime Mod 26.3 - Instalador + Relatorio
+title Naruto Anime Mod 26.3 - Instalador + Diagnostico v2
 color 0B
 
 rem ============================================================
-rem  INSTALAR-MOD.bat  -  Naruto Anime Mod [port 26.3 / Forge 66]
-rem  Codigo aberto MIT. Nada e apagado: o script apenas COPIA o
-rem  jar para a pasta certa e gera um RELATORIO para enviar.
+rem  INSTALAR-MOD.bat  (v2)  -  Naruto Anime Mod [port 26.3 / Forge 66]
+rem  Codigo aberto MIT. Nada e apagado: o script apenas COPIA o jar
+rem  para a pasta certa e gera um RELATORIO com VEREDITO do diagnostico.
 rem ============================================================
 
 set "MC=%APPDATA%\.minecraft"
@@ -18,7 +18,7 @@ set "JARBYTES=0"
 set "DEST="
 
 echo ============================================================
-echo    NARUTO ANIME MOD 26.3   -   INSTALADOR + RELATORIO
+echo    NARUTO ANIME MOD 26.3   -   INSTALADOR + DIAGNOSTICO v2
 echo ============================================================
 echo.
 echo  Feche o Minecraft antes de continuar.
@@ -58,7 +58,7 @@ if defined JAR (
         echo.
         echo  *** AVISO IMPORTANTE ***
         echo  Este arquivo tem !JARKB! KB. O jar certo do port 26.3 tem
-        echo  cerca de 50 KB. Arquivos de 20 MB / 40 MB / 100 MB sao os
+        echo  cerca de 50 KB. Arquivos de 4 MB / 20 MB / 40 MB sao os
         echo  mods ANTIGOS de 1.7.10 ou 1.20 e NAO funcionam no 26.3.
         echo  Use SOMENTE o narutoanimemod-26.3-*.jar do GitHub.
         echo.
@@ -161,45 +161,55 @@ exit /b 0
 
 :relatorio
 if not exist "%RELDIR%" mkdir "%RELDIR%"
+if exist "%RELDIR%\*.txt" del /q "%RELDIR%\*.txt" >nul 2>nul
+if exist "%RELDIR%\*.json" del /q "%RELDIR%\*.json" >nul 2>nul
 set "REP=%RELDIR%\RELATORIO.txt"
-echo RELATORIO - Naruto Anime Mod 26.3 > "%REP%"
+echo RELATORIO - Naruto Anime Mod 26.3 (v2) > "%REP%"
 echo Data: %DATE% %TIME% >> "%REP%"
 echo Pasta .minecraft: %MC% >> "%REP%"
 echo Jar usado: !JAR! >> "%REP%"
 echo Ultimo destino instalado: !DEST! >> "%REP%"
 echo. >> "%REP%"
+
 echo ==== [A] CONTEUDO DE %MC%\mods ==== >> "%REP%"
-if exist "%MC%\mods" (dir "%MC%\mods" >> "%REP%") else (echo PASTA NAO EXISTE >> "%REP%")
+if exist "%MC%\mods" (
+    for %%J in ("%MC%\mods\*") do echo   %%~nxJ   [%%~zJ bytes] >> "%REP%"
+) else (
+    echo PASTA NAO EXISTE >> "%REP%"
+)
 echo. >> "%REP%"
+
 echo ==== [B] PASTAS DE VERSAO DO LAUNCHER ==== >> "%REP%"
 for /d %%D in ("%MC%\versions\*") do (
     echo --- %%~nxD >> "%REP%"
-    if exist "%%~fD\%%~nxD.json" findstr /i /c:"inheritsFrom" "%%~fD\%%~nxD.json" >> "%REP%" 2>nul
+    if exist "%%~fD\%%~nxD.json" (
+        copy /y "%%~fD\%%~nxD.json" "%RELDIR%\pack-%%~nxD.json" >nul 2>nul
+        findstr /i /c:"inheritsFrom" /c:"\"id\"" "%%~fD\%%~nxD.json" >> "%REP%" 2>nul
+    ) else (
+        echo     [sem json de versao] >> "%REP%"
+    )
     if exist "%%~fD\mods" (
-        dir /b "%%~fD\mods" >> "%REP%"
+        for %%J in ("%%~fD\mods\*") do echo     mod: %%~nxJ [%%~zJ bytes] >> "%REP%"
     ) else (
         echo     [sem pasta mods] >> "%REP%"
     )
 )
 echo. >> "%REP%"
-echo ==== [C] LOGS E CRASHES ==== >> "%REP%"
+
+rem ---------- logs ----------
+echo ==== [C] LOGS DO JOGO (copiados) ==== >> "%REP%"
 if exist "%MC%\logs\latest.log" (
     copy /y "%MC%\logs\latest.log" "%RELDIR%\LOG-raiz.txt" >nul
     echo copiado: LOG-raiz.txt >> "%REP%"
 )
 for /d %%D in ("%MC%\versions\*") do (
-    set "PUT="
-    if exist "%%~fD\mods" set "PUT=1"
-    echo %%~nxD | findstr /i /c:"naruto" >nul && set "PUT=1"
-    if defined PUT (
-        if exist "%%~fD\logs\latest.log" (
-            copy /y "%%~fD\logs\latest.log" "%RELDIR%\LOG-%%~nxD.txt" >nul
-            echo copiado: LOG-%%~nxD.txt >> "%REP%"
-        )
-        if exist "%%~fD\crash-reports" (
-            xcopy /y /i /e "%%~fD\crash-reports" "%RELDIR%\CRASH-%%~nxD\" >nul 2>nul
-            echo copiado: CRASH-%%~nxD >> "%REP%"
-        )
+    if exist "%%~fD\logs\latest.log" (
+        copy /y "%%~fD\logs\latest.log" "%RELDIR%\LOG-%%~nxD.txt" >nul 2>nul
+        echo copiado: LOG-%%~nxD.txt >> "%REP%"
+    )
+    if exist "%%~fD\crash-reports" (
+        xcopy /y /i /e "%%~fD\crash-reports" "%RELDIR%\CRASH-%%~nxD\" >nul 2>nul
+        echo copiado: CRASH-%%~nxD >> "%REP%"
     )
 )
 if exist "%MC%\crash-reports" (
@@ -207,7 +217,25 @@ if exist "%MC%\crash-reports" (
     echo copiado: CRASH-raiz >> "%REP%"
 )
 echo. >> "%REP%"
-echo ==== [D] SISTEMA ==== >> "%REP%"
+
+rem ---------- VEREDITO ----------
+echo ==== [D] VEREDITO AUTOMATICO (o que os logs dizem) ==== >> "%REP%"
+echo Leia assim: >> "%REP%"
+echo   "Naruto Anime Mod] ... 33 jutsus ativos"  = o mod CARREGOU >> "%REP%"
+echo   "4 teclas registradas: C, V, B"           = as teclas CARREGARAM >> "%REP%"
+echo   "Forge / modlauncher"                     = o jogo abriu COM Forge >> "%REP%"
+echo   "Loaded 1900 advancements"                = mod presente (1866 = sem mod) >> "%REP%"
+echo. >> "%REP%"
+for %%L in ("%RELDIR%\LOG-*.txt") do (
+    echo ------- %%~nxL ------- >> "%REP%"
+    findstr /i /c:"Naruto Anime Mod" "%%~fL" >> "%REP%"
+    findstr /i /c:"modlauncher" "%%~fL" | findstr /i /v "not found" >nul 2>nul && echo   [ok] o log tem modlauncher (abriu com Forge) >> "%REP%"
+    findstr /i /c:"Loaded 1900 advancements" "%%~fL" >nul 2>nul && echo   [ok] 1900 advancements = mod presente >> "%REP%"
+    findstr /i /c:"Loaded 1866 advancements" "%%~fL" >nul 2>nul && echo   [X] 1866 advancements = este log NAO tem o mod >> "%REP%"
+    echo. >> "%REP%"
+)
+echo. >> "%REP%"
+echo ==== [E] SISTEMA ==== >> "%REP%"
 ver >> "%REP%"
 echo. >> "%REP%"
 echo ==== FIM ==== >> "%REP%"
@@ -218,12 +246,12 @@ echo  PRONTO!
 echo.
 echo  1. O relatorio esta em: %RELDIR%
 echo  2. Abra o Minecraft na versao Forge 26.3 ou no modpack
-echo  3. Confira a tela Mods: deve aparecer Naruto Anime Mod
+echo  3. Confira no MENU PRINCIPAL: deve aparecer um aviso (toast)
+echo     escrito "Naruto Anime Mod v0.1.2 - CARREGADO"
 echo  4. Depois de jogar, rode este script de novo e escolha [4]
-echo     para gerar um relatorio com o log NOVO.
+echo     para gerar o relatorio com o log NOVO.
 echo.
-echo  Envie no chat: o arquivo RELATORIO.txt + os LOG-*.txt
-echo  e um print da tela Mods do jogo.
+echo  Envie no chat: RELATORIO.txt + os LOG-*.txt + os pack-*.json
 echo ============================================================
 start "" "%RELDIR%"
 pause

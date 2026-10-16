@@ -3,6 +3,25 @@
 Todas as mudanças relevantes deste projeto são documentadas aqui.
 O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
+## [0.1.2] — 2026-10-16
+
+### ✨ Adicionado
+- **Toast (aviso na tela) ao carregar o mod** — aparece já no menu principal:
+  `Naruto Anime Mod v0.1.2 - CARREGADO` + `33 jutsus ativos - combos C/V/B`. Prova visual de que o mod
+  carregou sem precisar entrar em mundo, apertar tecla ou abrir log.
+- **Título da janela do jogo** alterado para `Naruto Anime Mod v0.1.2 CARREGADO - MC 26.3 - 33 jutsus`.
+- **`docs/TAMANHO-DO-MOD.md`** — por que o jar tem ~50 KB, com as medidas dos jars original/referência
+  e a lista do que está dentro do nosso jar.
+- `displayName` da tela Mods passou a ser **`Naruto Anime Mod (port 26.3)`**.
+
+### 🔧 Alterado
+- `INSTALAR-MOD.bat` **v2**: além de instalar, gera o relatório com **veredito automático**
+  (1900 vs 1866 advancements, presença de `modlauncher`, linhas do mod no log), lista os jars de cada
+  pasta `mods` com tamanho e copia o `pack-*.json` de cada versão/modpack.
+- `ferramentas/publicar.sh`: agora envia como assets apenas os arquivos de `dist/` que contenham o
+  número da versão (ex.: tag `v0.1.2` → `*0.1.2*`), evitando subir releases antigas de novo.
+- Versão do mod (`mods.toml` e `build.gradle`) → **0.1.2**.
+
 ## [0.1.1] — 2026-10-16
 
 ### 🐞 Corrigido

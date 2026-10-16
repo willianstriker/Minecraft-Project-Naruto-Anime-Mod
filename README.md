@@ -20,37 +20,32 @@ Sistema de ativação de jutsus por **combinação de teclas C / V / B** — sem
 
 ---
 
-## 🆕 NOVA ATUALIZAÇÃO — v0.1.1 · 16/10/2026
+## 🆕 NOVA ATUALIZAÇÃO — v0.1.2 · 16/10/2026
 
-> ### ⚠️ Se você baixou a v0.1.0, atualize!
-> A v0.1.0 tinha **2 bugs** que faziam o mod não responder às teclas C/V/B. Os dois foram encontrados
-> rodando o mod num Minecraft 26.3 de verdade e **corrigidos na v0.1.1**.
+> **"Prova na tela": agora dá para ver em 3 segundos se o mod carregou.**
 
-### 🐞 Bugs que existiam na versão antiga (v0.1.0)
+### ✨ O que mudou
+- **Aviso na tela (toast) ao abrir o jogo** — no menu principal aparece:
+  **“Naruto Anime Mod v0.1.2 - CARREGADO · 33 jutsus ativos - combos C/V/B”**.
+- **Título da janela do jogo** passa a mostrar `Naruto Anime Mod v0.1.2 CARREGADO` — visível na barra de tarefas.
+- **`INSTALAR-MOD.bat` v2 com veredito automático**: lê os logs e escreve no relatório
+  `[ok] 1900 advancements = mod presente` / `[X] 1866 = este log NÃO tem o mod`,
+  lista cada pasta `mods` **com o tamanho dos jars** e copia o `pack-*.json` de cada versão/modpack
+  (é ali que se vê qual Minecraft o pack usa).
+- **Novo documento [`docs/TAMANHO-DO-MOD.md`](docs/TAMANHO-DO-MOD.md)** — explica por que o mod tem
+  ~50 KB (com números medidos) e **por que isso não significa que ele está incompleto**.
+- Tela **Mods** agora mostra `Naruto Anime Mod (port 26.3)`.
 
-| # | Bug | O que acontecia no jogo | Correção na v0.1.1 |
-|---|-----|-------------------------|--------------------|
-| 1 | **Teclas registradas tarde demais** — no Minecraft 26.3 o cliente termina de iniciar **antes** do `FMLCommonSetupEvent`, e o mod só registrava as teclas nesse setup | As teclas **C / V / B não existiam** no jogo: não apareciam em Opções → Controles e não faziam nada ao apertar | Os listeners do cliente agora são registrados **na construção do mod** (`NarutoKeys.registrarListeners()`), cedo o suficiente para o `RegisterKeyMappingsEvent` |
-| 2 | **Códigos de tecla no formato antigo** — o port usava os números do 1.7.10 (67 / 86 / 66, do GLFW) | Mesmo quando registradas, as teclas viravam **F10 / "-" / F9** em vez de C / V / B | Trocado para **scancodes** do 26.3: `InputConstants.KEY_C`, `KEY_V`, `KEY_B` e `KEY_J` |
+### 🐞 Bugs corrigidos nas versões anteriores (histórico)
+| Versão | Bug | Correção |
+|---|---|---|
+| 0.1.0 | Teclas C/V/B nunca eram registradas (listeners registrados **depois** do início do cliente no 26.3) | Registro na **construção do mod** (v0.1.1) |
+| 0.1.0 | Códigos de tecla antigos do 1.7.10 (viravam **F10 / "-" / F9**) | `InputConstants.KEY_C/KEY_V/KEY_B/KEY_J` (v0.1.1) |
 
-### ✨ O que mudou nesta atualização
-
-- **Mensagem de boas-vindas no chat** ao entrar num mundo — prova visual na hora de que o mod carregou:
-  `[Naruto Anime Mod] 33 jutsus ativos - combos C/V/B. A aba de conquistas (tecla L) mostra as combinações.`
-- **`INSTALAR-MOD.bat`** — instalador automático para Windows: acha o jar, copia para a pasta certa
-  (versão Forge normal **e/ou** modpack do TLauncher), cria a pasta `mods` se não existir e gera a pasta
-  `RELATORIO/` com logs e crash-reports para diagnóstico. **Nada é apagado.**
-- **Mensagens de log novas** para diagnóstico: `listeners do cliente registrados...` e `4 teclas registradas: C, V, B (jutsus) e J (menu)`.
-- **Guia novo** [`docs/guias/INSTALAR-E-DIAGNOSTICAR.html`](docs/guias/INSTALAR-E-DIAGNOSTICAR.html) —
-  explica também por que o mod tem ~50 KB (e por que os jars antigos de 4 MB / 20 MB / 40 MB **não** funcionam no 26.3).
-- **Aviso em `referencia/`** — os jars antigos (1.7.10 / 1.20) são só fonte de consulta, não servem para jogar.
-- **Provas de teste em [`docs/evidencias/`](docs/evidencias/)** — prints do mod rodando no 26.3.
-
-### ✅ Como confirmar que está funcionando (3 sinais)
-
-1. Tela **Mods** do menu principal: `Naruto Anime Mod 0.1.1` na lista;
-2. **Ao entrar num mundo**: mensagem dourada no chat (acima);
-3. **Aperte B-B-B**: aparece `» Shunshin no Jutsu` na tela (e o `Load 1900 advancements` aparece no log).
+### ✅ Como confirmar (3 sinais)
+1. **Menu principal:** toast + título da janela (v0.1.2);
+2. **Tela Mods:** `Naruto Anime Mod (port 26.3)` na lista;
+3. **No mundo:** mensagem dourada no chat e **B-B-B** → `» Shunshin no Jutsu`.
 
 ---
 
@@ -58,8 +53,8 @@ Sistema de ativação de jutsus por **combinação de teclas C / V / B** — sem
 
 | Arquivo | Para que serve |
 |---|---|
-| [**narutoanimemod-26.3-v0.1.1.jar**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest) | ⭐ **É este que vai na pasta `mods/`** |
-| [**NarutoAnimeMod-26.3-v0.1.1-COM-INSTALADOR.zip**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest) | Pacote completo: **jar + instalador `.bat` + guias** (extraia e rode o `INSTALAR-MOD.bat`) |
+| [**narutoanimemod-26.3-v0.1.2.jar**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest) | ⭐ **É este que vai na pasta `mods/`** |
+| [**NarutoAnimeMod-26.3-v0.1.2-COM-INSTALADOR.zip**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest) | Pacote completo: **jar + instalador `.bat` + guias** (extraia e rode o `INSTALAR-MOD.bat`) |
 
 > Página de todas as versões: [**Releases**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases)
 >
@@ -134,7 +129,7 @@ Este projeto **porta o Naruto Anime Mod 0.9.17 (Minecraft 1.7.10)** para a vers�
 
 1. Instale o **Forge 26.3 (66.0.x)** na sua instância
 2. Garanta que o jogo usa **Java 25** (obrigatório no 26.3)
-3. Copie `dist/narutoanimemod-26.3-v0.1.1.jar` para a pasta `mods/`
+3. Copie `dist/narutoanimemod-26.3-v0.1.2.jar` para a pasta `mods/`
 4. Abra o jogo → **Opções → Controles** → categoria **Naruto Anime Mod**
 
 > ⚠️ O arquivo `.zip` do repositório **não** vai na pasta `mods/` — só o `.jar` de dentro.

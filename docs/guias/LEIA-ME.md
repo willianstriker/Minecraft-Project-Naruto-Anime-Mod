@@ -6,6 +6,7 @@
 | [`TLAUNCHER-QUAL-VERSAO-ABRIR.html`](TLAUNCHER-QUAL-VERSAO-ABRIR.html) | Dúvida sobre qual versão abrir (normal x Forge x Modpack) |
 | [`CORRECAO-MODPACK-TLAUNCHER.html`](CORRECAO-MODPACK-TLAUNCHER.html) | **Mod não aparece** e você usa um Modpack criado no TLauncher |
 | [`DIAGNOSTICO-MOD-NAO-FUNCIONA.html`](DIAGNOSTICO-MOD-NAO-FUNCIONA.html) | Mod não aparece (guia geral, com os 4 testes) |
+| [`../../docs/TAMANHO-DO-MOD.md`](../TAMANHO-DO-MOD.md) | **"Por que só 50 KB?"** — explicação com números e o que impede um mod de carregar |
 | [`GUIA-PASSO-A-PASSO.html`](GUIA-PASSO-A-PASSO.html) | Publicar o projeto no GitHub pelo navegador |
 | [`PUBLICAR-NO-GITHUB.md`](PUBLICAR-NO-GITHUB.md) | Publicar com git (avançado) |
 
