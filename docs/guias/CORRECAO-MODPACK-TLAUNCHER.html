@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Achei o problema! — Modpack do TLauncher</title>
+</head>
+<body style="margin:0;background:#0f1115;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#e8e8ee">
+<div style="max-width:920px;margin:0 auto;padding:26px 18px 70px">
+
+  <div style="background:linear-gradient(135deg,#065f46,#059669);border-radius:16px;padding:24px 26px">
+    <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#a7f3d0">Diagnóstico concluído</div>
+    <h1 style="margin:6px 0 8px;font-size:26px;line-height:1.25">Achei o problema: você usa um <u>Modpack</u>, e o mod está na pasta <u>global</u></h1>
+    <div style="color:#d1fae5;font-size:14.5px;line-height:1.6">
+      Seu mod está no lugar <b>certo</b>… mas o TLauncher está abrindo uma <b>outra pasta</b>.
+      É um detalhe que quase ninguém explica.
+    </div>
+  </div>
+
+  <!-- AS DUAS PROVAS -->
+  <div style="margin-top:20px;background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:20px">
+    <div style="font-size:17px;font-weight:800;margin-bottom:14px">🔍 As duas provas (do seu log e dos seus prints)</div>
+
+    <div style="background:#0d1117;border-left:3px solid #60a5fa;border-radius:8px;padding:14px 16px;margin-bottom:12px">
+      <div style="color:#60a5fa;font-weight:700;font-size:13.5px;margin-bottom:8px">PROVA 1 — o log que você mandou (latest.log)</div>
+      <div style="font-size:13.5px;color:#c9cdd6;line-height:1.9">
+        • menções ao Forge no arquivo: <b style="color:#f87171">0</b> (zero!)<br>
+        • menções ao nosso mod: <b style="color:#f87171">0</b><br>
+        • avanços do mundo: <b style="color:#fbbf24">1866</b> → é exatamente o número do <b>Minecraft puro</b> (com o mod seriam 1900)
+      </div>
+      <div style="color:#93c5fd;font-size:13px;margin-top:10px">
+        ➜ Ou seja: <b>essa</b> sessão rodou sem Forge e sem mod nenhum.
+      </div>
+    </div>
+
+    <div style="background:#0d1117;border-left:3px solid #60a5fa;border-radius:8px;padding:14px 16px;margin-bottom:12px">
+      <div style="color:#60a5fa;font-weight:700;font-size:13.5px;margin-bottom:8px">PROVA 2 — o print do jogo</div>
+      <div style="font-size:13.5px;color:#c9cdd6;line-height:1.9">
+        Mostra <b style="color:#4ade80">Forge Beta 66.0.12</b> rodando ✅ — então o Forge está instalado e funcionando.
+      </div>
+    </div>
+
+    <div style="background:#0d1117;border-left:3px solid #60a5fa;border-radius:8px;padding:14px 16px">
+      <div style="color:#60a5fa;font-weight:700;font-size:13.5px;margin-bottom:8px">PROVA 3 — o print do TLauncher</div>
+      <div style="font-size:13.5px;color:#c9cdd6;line-height:1.9">
+        No rodapé está selecionado <b>"Naruto Anime Mod 0.1.0"</b> — isso é um <b>Modpack que você criou</b>,
+        e <b>cada modpack do TLauncher tem a própria pasta de mods</b>.
+      </div>
+    </div>
+  </div>
+
+  <!-- A DESCOBERTA -->
+  <div style="margin-top:22px;background:#1c1917;border:2px solid #f59e0b;border-radius:14px;padding:20px">
+    <div style="font-size:17px;font-weight:800;color:#fbbf24;margin-bottom:12px">💡 O que está acontecendo (a descoberta)</div>
+    <div style="font-size:14.5px;line-height:1.95;color:#e7e5e4">
+      Você colocou o mod em <code style="background:#0d1117;padding:2px 6px;border-radius:5px">.minecraft\mods</code> — essa é a pasta do Minecraft <b>"normal"</b>.<br>
+      Mas você está abrindo o <b>Modpack</b> "Naruto Anime Mod 0.1.0"… e o modpack <b>não enxerga</b> essa pasta!<br><br>
+      É como guardar a chave na gaveta da casa antiga. 🗝️<br>
+      <b style="color:#4ade80">Cada modpack tem a própria pastinha, dentro de <code style="background:#0d1117;padding:2px 6px;border-radius:5px">.minecraft\versions\</code></b>
+    </div>
+  </div>
+
+  <!-- ESTRUTURA -->
+  <div style="margin-top:24px">
+    <div style="font-size:19px;font-weight:700;margin-bottom:12px">📁 Onde está cada coisa (olhe bem!)</div>
+    <div style="background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:18px;font-family:ui-monospace,monospace;font-size:13px;line-height:2.1;color:#c9d1d9;overflow-x:auto">
+      C:\Users\Willian\AppData\Roaming\.minecraft\<br>
+      │<br>
+      ├── 📁 <b style="color:#f87171">mods\</b>&nbsp;&nbsp;<span style="color:#f87171">← ❌ você colocou AQUI (o modpack NÃO lê esta pasta)</span><br>
+      │&nbsp;&nbsp;&nbsp;└── 📄 narutoanimemod-26.3-v0.1.0.jar<br>
+      │<br>
+      ├── 📁 saves\<br>
+      ├── 📁 logs\&nbsp;&nbsp;<span style="color:#8b93a3">(foi daqui o log que você mandou)</span><br>
+      │<br>
+      └── 📁 <b style="color:#ffd166">versions\</b>&nbsp;&nbsp;<span style="color:#ffd166">← os modpacks vivem aqui dentro</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;└── 📁 <b style="color:#4ade80">Naruto Anime Mod 0.1.0\</b><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── 📁 <b style="color:#4ade80">mods\</b>&nbsp;&nbsp;<span style="color:#4ade80">← ✅ COLOQUE O ARQUIVO AQUI!</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── 📄 narutoanimemod-26.3-v0.1.0.jar<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── 📁 saves\&nbsp;&nbsp;<span style="color:#8b93a3">(os mundos desse modpack)</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── 📄 Naruto Anime Mod 0.1.0.json
+    </div>
+  </div>
+
+  <!-- PASSO A PASSO DA CORREÇÃO -->
+  <div style="margin-top:26px">
+    <div style="font-size:19px;font-weight:700;margin-bottom:12px">✅ A correção (5 passos, 2 minutos)</div>
+
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-bottom:10px">
+      <div style="font-weight:700;color:#7dd3fc;margin-bottom:8px">1️⃣ Feche o Minecraft e o TLauncher</div>
+      <div style="font-size:14px;color:#c9cdd6;line-height:1.8">Só pra garantir que nada fique travado.</div>
+    </div>
+
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-bottom:10px">
+      <div style="font-weight:700;color:#7dd3fc;margin-bottom:8px">2️⃣ Abra a pasta .minecraft</div>
+      <div style="font-size:14px;color:#c9cdd6;line-height:1.8">
+        Aperte <b>Windows + R</b>, digite <code style="background:#0d1117;padding:3px 7px;border-radius:5px;color:#4ade80">%appdata%\.minecraft</code> e aperte <b>Enter</b>.<br>
+        <span style="color:#8b93a3">(ou clique no ícone de pasta 📁 no TLauncher)</span>
+      </div>
+    </div>
+
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-bottom:10px">
+      <div style="font-weight:700;color:#7dd3fc;margin-bottom:8px">3️⃣ Entre na pasta <code style="background:#0d1117;padding:2px 6px;border-radius:5px">versions</code></div>
+      <div style="font-size:14px;color:#c9cdd6;line-height:1.8">
+        Vai ter uma pasta chamada <b style="color:#4ade80">Naruto Anime Mod 0.1.0</b> (o mesmo nome que aparece no
+        rodapé do TLauncher). <b>Abra ela.</b>
+      </div>
+    </div>
+
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-bottom:10px">
+      <div style="font-weight:700;color:#7dd3fc;margin-bottom:8px">4️⃣ Dentro dela, abra (ou crie) a pasta <code style="background:#0d1117;padding:2px 6px;border-radius:5px">mods</code></div>
+      <div style="font-size:14px;color:#c9cdd6;line-height:1.8">
+        • Se já existir uma pasta <b>mods</b> ali → ótimo, entre nela<br>
+        • Se <b>não</b> existir → clique com o botão direito → <b>Novo → Pasta</b> → digite <b>mods</b> (tudo minúsculo) → Enter
+      </div>
+    </div>
+
+    <div style="background:#0f1f1a;border:2px solid #4ade80;border-radius:14px;padding:18px 20px">
+      <div style="font-weight:700;color:#4ade80;margin-bottom:8px">5️⃣ Copie o arquivo .jar para essa pasta mods</div>
+      <div style="font-size:14px;color:#c9cdd6;line-height:1.8">
+        Copie o <code style="background:#0d1117;padding:3px 7px;border-radius:5px;color:#4ade80">narutoanimemod-26.3-v0.1.0.jar</code>
+        para <b>.minecraft\versions\Naruto Anime Mod 0.1.0\mods\</b><br><br>
+        <span style="color:#a8a29e">💡 Pode deixar a cópia que já está em <code>.minecraft\mods</code> lá também — não atrapalha nada.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFERIR -->
+  <div style="margin-top:26px;background:#12181f;border:1px solid #24313f;border-radius:14px;padding:20px">
+    <div style="font-size:17px;font-weight:700;color:#7cc4ff;margin-bottom:12px">🔎 Como conferir se deu certo (antes de entrar no mundo)</div>
+    <div style="font-size:14.5px;line-height:2;color:#bcc9d6">
+      Abra o jogo pelo modpack e, no <b>menu principal</b>:<br>
+      <b style="color:#4ade80">1.</b> Canto inferior esquerdo mostra <b>Forge</b> → ok, Forge ativo<br>
+      <b style="color:#4ade80">2.</b> Clique no botão <b>Mods</b> → procure <b>"Naruto Anime Mod"</b> na lista<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8b93a3">Esse é o teste mais importante. Se aparecer ali, está funcionando!</span><br>
+      <b style="color:#4ade80">3.</b> Entre no mundo e aperte <b>C</b> → deve aparecer mensagem no chat
+    </div>
+
+    <div style="background:#0d1117;border:1px solid #30363d;border-radius:10px;padding:14px;margin-top:14px;font-family:ui-monospace,monospace;font-size:12.5px;color:#c9d1d9;line-height:1.9">
+      <div style="color:#8b93a3;margin-bottom:6px">Mods (3)</div>
+      <div>🔧 Forge&nbsp;&nbsp;<span style="color:#8b93a3">66.0.12</span></div>
+      <div style="color:#4ade80">🍥 <b>Naruto Anime Mod</b>&nbsp;&nbsp;<span style="color:#8b93a3">1.0.0</span>&nbsp;&nbsp;<span style="color:#8b93a3">← é isso que você quer ver aqui!</span></div>
+    </div>
+  </div>
+
+  <!-- SE DER ERRADO -->
+  <div style="margin-top:26px;background:#1d1a10;border:1px solid #4d3f14;border-radius:14px;padding:18px 20px">
+    <div style="font-size:16px;font-weight:800;color:#fbbf24;margin-bottom:12px">🔧 Se não achar a pasta "Naruto Anime Mod 0.1.0" dentro de versions</div>
+    <div style="font-size:14px;line-height:1.9;color:#ddd2b8">
+      Pode ser que o nome esteja um pouco diferente (acentos, espaços, maiúsculas).<br>
+      Abra a pasta <b>versions</b> e me diga <b>quais pastas aparecem ali dentro</b> — eu te digo qual é a certa.<br><br>
+      <b>Plano B (100% garantido):</b> me avise e eu te passo como instalar o <b>Forge 26.3 direto</b> (sem modpack),
+      aí o mod vai na pasta <code>.minecraft\mods</code> comum e funciona igual aos tutoriais.
+    </div>
+  </div>
+
+  <!-- DICA EXTRA -->
+  <div style="margin-top:26px;background:#171a21;border:1px solid #3a3a45;border-radius:14px;padding:18px 20px">
+    <div style="font-size:16px;font-weight:700;color:#e8e8ee;margin-bottom:10px">💡 Dica extra: confira se o arquivo é mesmo .jar</div>
+    <div style="font-size:14px;line-height:1.9;color:#c9cdd6">
+      O Windows esconde a extensão dos arquivos por padrão, então às vezes o arquivo se chama
+      <code style="background:#0d1117;padding:2px 6px;border-radius:5px">narutoanimemod-26.3-v0.1.0.jar</code> mas na tela só aparece
+      <code style="background:#0d1117;padding:2px 6px;border-radius:5px">narutoanimemod-26.3-v0.1.0</code>.<br><br>
+      Para ter certeza: na pasta, clique em <b>Exibir → Mostrar → Extensões de nomes de arquivos</b>.<br>
+      Deve aparecer: <b style="color:#4ade80">narutoanimemod-26.3-v0.1.0.jar</b> ✔<br>
+      Se aparecer <span style="color:#f87171">.zip</span> no final, é o arquivo errado — baixe o .jar de novo.
+    </div>
+  </div>
+
+  <div style="margin-top:28px;text-align:center;color:#6b7280;font-size:13px;line-height:1.9">
+    Fez isso e ainda não apareceu? Me manda um print da tela <b>Mods</b> do jogo<br>
+    que eu descubro na hora o que falta. 🍥
+  </div>
+
+</div>
+</body>
+</html>
