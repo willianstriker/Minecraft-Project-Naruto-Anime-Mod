@@ -1,0 +1,25 @@
+# Gradle / build
+build/
+.gradle/
+out/
+*.class
+
+# Ambiente de execução (mundo, logs, configs locais)
+run/
+run-data/
+logs/
+crash-reports/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.eclipse/
+.settings/
+.classpath
+.project
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
