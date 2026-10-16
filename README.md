@@ -20,12 +20,46 @@ Sistema de ativação de jutsus por **combinação de teclas C / V / B** — sem
 
 ---
 
+## 🆕 NOVA ATUALIZAÇÃO — v0.1.1 · 16/10/2026
+
+> ### ⚠️ Se você baixou a v0.1.0, atualize!
+> A v0.1.0 tinha **2 bugs** que faziam o mod não responder às teclas C/V/B. Os dois foram encontrados
+> rodando o mod num Minecraft 26.3 de verdade e **corrigidos na v0.1.1**.
+
+### 🐞 Bugs que existiam na versão antiga (v0.1.0)
+
+| # | Bug | O que acontecia no jogo | Correção na v0.1.1 |
+|---|-----|-------------------------|--------------------|
+| 1 | **Teclas registradas tarde demais** — no Minecraft 26.3 o cliente termina de iniciar **antes** do `FMLCommonSetupEvent`, e o mod só registrava as teclas nesse setup | As teclas **C / V / B não existiam** no jogo: não apareciam em Opções → Controles e não faziam nada ao apertar | Os listeners do cliente agora são registrados **na construção do mod** (`NarutoKeys.registrarListeners()`), cedo o suficiente para o `RegisterKeyMappingsEvent` |
+| 2 | **Códigos de tecla no formato antigo** — o port usava os números do 1.7.10 (67 / 86 / 66, do GLFW) | Mesmo quando registradas, as teclas viravam **F10 / "-" / F9** em vez de C / V / B | Trocado para **scancodes** do 26.3: `InputConstants.KEY_C`, `KEY_V`, `KEY_B` e `KEY_J` |
+
+### ✨ O que mudou nesta atualização
+
+- **Mensagem de boas-vindas no chat** ao entrar num mundo — prova visual na hora de que o mod carregou:
+  `[Naruto Anime Mod] 33 jutsus ativos - combos C/V/B. A aba de conquistas (tecla L) mostra as combinações.`
+- **`INSTALAR-MOD.bat`** — instalador automático para Windows: acha o jar, copia para a pasta certa
+  (versão Forge normal **e/ou** modpack do TLauncher), cria a pasta `mods` se não existir e gera a pasta
+  `RELATORIO/` com logs e crash-reports para diagnóstico. **Nada é apagado.**
+- **Mensagens de log novas** para diagnóstico: `listeners do cliente registrados...` e `4 teclas registradas: C, V, B (jutsus) e J (menu)`.
+- **Guia novo** [`docs/guias/INSTALAR-E-DIAGNOSTICAR.html`](docs/guias/INSTALAR-E-DIAGNOSTICAR.html) —
+  explica também por que o mod tem ~50 KB (e por que os jars antigos de 4 MB / 20 MB / 40 MB **não** funcionam no 26.3).
+- **Aviso em `referencia/`** — os jars antigos (1.7.10 / 1.20) são só fonte de consulta, não servem para jogar.
+- **Provas de teste em [`docs/evidencias/`](docs/evidencias/)** — prints do mod rodando no 26.3.
+
+### ✅ Como confirmar que está funcionando (3 sinais)
+
+1. Tela **Mods** do menu principal: `Naruto Anime Mod 0.1.1` na lista;
+2. **Ao entrar num mundo**: mensagem dourada no chat (acima);
+3. **Aperte B-B-B**: aparece `» Shunshin no Jutsu` na tela (e o `Load 1900 advancements` aparece no log).
+
+---
+
 ## 📥 Download
 
 | Arquivo | Para que serve |
 |---|---|
-| [**narutoanimemod-26.3-v0.1.0.jar**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest) | ⭐ **É este que vai na pasta `mods/`** |
-| [**NarutoAnimeMod-26.3-v0.1.0.zip**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest) | Pacote completo: mod + créditos + guia de instalação |
+| [**narutoanimemod-26.3-v0.1.1.jar**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest) | ⭐ **É este que vai na pasta `mods/`** |
+| [**NarutoAnimeMod-26.3-v0.1.1-COM-INSTALADOR.zip**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases/latest) | Pacote completo: **jar + instalador `.bat` + guias** (extraia e rode o `INSTALAR-MOD.bat`) |
 
 > Página de todas as versões: [**Releases**](https://github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod/releases)
 >
@@ -100,7 +134,7 @@ Este projeto **porta o Naruto Anime Mod 0.9.17 (Minecraft 1.7.10)** para a vers�
 
 1. Instale o **Forge 26.3 (66.0.x)** na sua instância
 2. Garanta que o jogo usa **Java 25** (obrigatório no 26.3)
-3. Copie `dist/narutoanimemod-26.3-v0.1.0.jar` para a pasta `mods/`
+3. Copie `dist/narutoanimemod-26.3-v0.1.1.jar` para a pasta `mods/`
 4. Abra o jogo → **Opções → Controles** → categoria **Naruto Anime Mod**
 
 > ⚠️ O arquivo `.zip` do repositório **não** vai na pasta `mods/` — só o `.jar` de dentro.

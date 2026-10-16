@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Naruto Anime Mod 26.3 - Instalador e Relatório</title>
+<style>
+  :root { --laranja:#ff7a18; --escuro:#231a12; --claro:#fff8f0; --verde:#1f9d55; --vermelho:#c53030; --borda:#e8d9c8; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: 'Segoe UI', Verdana, Arial, sans-serif; color:#2b2118; background:var(--claro); line-height:1.55; }
+  .topo { background: linear-gradient(135deg,#3a2313,#7a3d12 55%,#ff7a18); color:#fff; padding:34px 26px 28px; }
+  .topo h1 { margin:0 0 6px; font-size:27px; }
+  .topo p { margin:4px 0; opacity:.95; }
+  .selo { display:inline-block; background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.45); border-radius:999px; padding:3px 12px; font-size:13px; margin-bottom:12px; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 18px 60px; }
+  h2 { font-size:21px; margin-top:38px; border-left:6px solid var(--laranja); padding-left:12px; }
+  h3 { font-size:17px; margin-bottom:6px; }
+  .card { background:#fff; border:1px solid var(--borda); border-radius:14px; padding:18px 20px; margin:16px 0; box-shadow:0 1px 3px rgba(90,60,20,.06); }
+  .grade { display:flex; gap:16px; flex-wrap:wrap; }
+  .grade > .card { flex:1 1 320px; }
+  table { border-collapse: collapse; width:100%; font-size:14.5px; }
+  th, td { border-bottom:1px solid var(--borda); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#fdf1e3; }
+  .num { font-variant-numeric: tabular-nums; white-space:nowrap; }
+  .barra { height:14px; border-radius:7px; background:#f1e4d3; overflow:hidden; margin:6px 0 2px; }
+  .barra i { display:block; height:100%; }
+  .b1 { background:#8a5a2b; } .b2 { background:var(--laranja); }
+  .alerta { border-left:6px solid var(--vermelho); background:#fff5f5; }
+  .ok { border-left:6px solid var(--verde); background:#f2fbf5; }
+  .dica { border-left:6px solid #2b6cb0; background:#f2f7fd; }
+  .passo { display:flex; gap:12px; margin:12px 0; }
+  .passo .n { flex:0 0 34px; height:34px; border-radius:50%; background:var(--laranja); color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center; }
+  code, .mono { font-family: Consolas, 'Courier New', monospace; font-size:13.5px; background:#f6ece0; padding:1px 6px; border-radius:6px; }
+  pre { background:#241a10; color:#ffe9d2; padding:14px 16px; border-radius:10px; overflow:auto; font-size:12.5px; max-height:420px; }
+  details summary { cursor:pointer; font-weight:600; color:#8a4b12; }
+  ul.check { list-style:none; padding-left:0; }
+  ul.check li { margin:7px 0; padding-left:30px; position:relative; }
+  ul.check li::before { content:"✔"; position:absolute; left:6px; color:var(--verde); font-weight:bold; }
+  .rodape { margin-top:40px; font-size:13px; color:#6b5b4b; border-top:1px solid var(--borda); padding-top:14px; }
+  .kbd { display:inline-block; border:1px solid #b9a894; border-bottom-width:3px; border-radius:6px; padding:1px 8px; font-weight:700; background:#fff; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="topo">
+  <div class="wrap">
+    <span class="selo">Port 26.3 · v0.1.1 · atualizado em 16/10/2026</span>
+    <h1>Não deu certo? Agora tem explicação — e um instalador</h1>
+    <p>Resumo: o tamanho de 50 KB é normal, o jar grande de 20/40 MB não funciona no 26.3 <b>mesmo</b>, e a instalação agora é automática.</p>
+  </div>
+</div>
+<div class="wrap">
+
+<h2>1) Por que o mod tem só 50 KB?</h2>
+<div class="grade">
+  <div class="card">
+    <h3>Mod original (1.7.10)</h3>
+    <p class="num" style="font-size:22px;margin:0"><b>20,4 MB</b> <span style="font-size:13px;color:#7a6a5a">(20.396.504 bytes)</span></p>
+    <div class="barra"><i class="b1" style="width:96%"></i></div>
+    <table>
+      <tr><th>Conteúdo</th><th class="num">Tamanho</th></tr>
+      <tr><td>Texturas, modelos, sons (assets)</td><td class="num">21,0 MB</td></tr>
+      <tr><td>Código (alcoholmod etc.)</td><td class="num">10,7 MB</td></tr>
+      <tr><td>Resto (Susanoo, pacotes, mcmod.info)</td><td class="num">~0,2 MB</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3>Nosso port 26.3 (v0.1.0 / v0.1.1)</h3>
+    <p class="num" style="font-size:22px;margin:0"><b>~50 KB</b> <span style="font-size:13px;color:#7a6a5a">(50.246 bytes)</span></p>
+    <div class="barra"><i class="b2" style="width:1%"></i></div>
+    <table>
+      <tr><th>Conteúdo</th><th class="num">Tamanho</th></tr>
+      <tr><td>Texturas, modelos, sons</td><td class="num">0 (ainda não entrou)</td></tr>
+      <tr><td>12 classes de código (combos, jutsus, rede)</td><td class="num">~45 KB</td></tr>
+      <tr><td>34 conquistas + textos PT/EN</td><td class="num">~10 KB</td></tr>
+    </table>
+  </div>
+</div>
+<div class="card dica">
+  <b>O tamanho de um mod é quase todo textura/som.</b> Só para comparar: a biblioteca <span class="mono">SekCLib</span> do Sekwah41's (que também é só código, sem texturas) tem <b>48,9 KB</b> — praticamente igual ao nosso.
+  Ou seja: <b>50 KB é normal e não quer dizer arquivo quebrado.</b> Nos testes aqui no meu ambiente o jar passou: <span class="mono">Loaded 1900 advancements</span> e <span class="mono">33 jutsus ativos no sistema de combos C/V/B</span>.
+</div>
+
+<h2>2) E aquele jar de 20/40 MB? Esse nunca vai funcionar no 26.3</h2>
+<div class="card alerta">
+  <p>O arquivo grande é o <b>mod ANTIGO</b> (1.7.10 ou o de 1.20 do Sekwah41's). O Forge do Minecraft 26.3 <b>nem reconhece o formato antigo</b> — ele não vai carregar de jeito nenhum, em nenhum modpack. É <b>exatamente por isso</b> que eu estou fazendo este port.</p>
+  <p><b>Importante:</b> a pasta <span class="mono">referencia/</span> do GitHub tem esses jars antigos (o original de 20,4 MB) só como <b>fonte de consulta do código</b>. Não baixe nada de lá para jogar — o único arquivo para jogar é o <span class="mono">narutoanimemod-26.3-*.jar</span> (~50 KB) do Release.</p>
+  <p><b>Faça agora:</b> abra a pasta <span class="mono">mods</span> e <b>tire</b> qualquer jar grande (20 MB, 40 MB...) que estiver lá. Só pode ficar o <span class="mono">narutoanimemod-26.3-*.jar</span>.</p>
+  <p><i>Me diz na próxima mensagem de onde veio o jar de 40 MB (qual site/pasta)? Quero confirmar que não é outra coisa.</i></p>
+</div>
+
+<h2>3) Instalador automático: <span class="mono">INSTALAR-MOD.bat</span></h2>
+<div class="card ok">
+  <p>Baixe o ZIP que eu mandei no chat (<b>NarutoAnimeMod-26.3-v0.1.1-COM-INSTALADOR.zip</b>), extraia em qualquer pasta (ex.: Downloads) e siga:</p>
+  <div class="passo"><div class="n">1</div><div><b>Feche o Minecraft.</b></div></div>
+  <div class="passo"><div class="n">2</div><div>Dê <b>duplo clique</b> em <span class="mono">INSTALAR-MOD.bat</span>. Se o Windows avisar (SmartScreen), clique em <b>Mais informações → Executar assim mesmo</b> (é um arquivo de texto simples, código aberto, dá pra abrir no Bloco de Notas e ler tudo).</div></div>
+  <div class="passo"><div class="n">3</div><div>Escolha <b>[3] Instalar nos dois</b> — ele copia o jar para <span class="mono">.minecraft\mods</span> e para a pasta do modpack, e ainda gera o relatório.</div></div>
+  <div class="passo"><div class="n">4</div><div>Abra o jogo (versão <b>Forge 26.3</b> ou o seu <b>modpack</b>) e entre num mundo.</div></div>
+  <div class="passo"><div class="n">5</div><div><b>Rode o script de novo</b> e escolha <b>[4] Somente gerar o RELATORIO</b>. Aí ele copia o log NOVO do jogo.</div></div>
+  <p><b>O que o script faz:</b> localiza o jar, mostra a pasta de cada versão/modpack do TLauncher, copia o jar para a pasta certa (criando a pasta <span class="mono">mods</span> se não existir) e gera uma pasta <span class="mono">RELATORIO</span> com o log e possíveis crashs. <b>Nada é apagado.</b></p>
+</div>
+<div class="card dica">
+  <b>Boa notícia do seu print:</b> o rodapé do menu mostra <span class="mono">Forge Beta 66.0.12</span> — ou seja, <b>o Forge do 26.3 está rodando aí</b>. O que falta é só o jar certo estar na pasta que o Forge lê. É isso que o script resolve.
+</div>
+
+<h2>4) Como conferir que o mod carregou (3 sinais)</h2>
+<div class="card">
+  <ul class="check">
+    <li><b>Tela "Mods"</b> (no menu principal): "Naruto Anime Mod" na lista — role a lista até achar.</li>
+    <li><b>Chat ao entrar no mundo</b> (novo na v0.1.1): mensagem <span style="color:#b8860b"><b>[Naruto Anime Mod] 33 jutsus ativos - combos C/V/B. A aba de conquistas (tecla L) mostra as combinações.</b></span> — se essa mensagem aparecer, o mod carregou 100%.</li>
+    <li><b>Conquistas (tecla <span class="kbd">L</span>)</b>: deve ter a aba do mod com as combinações de cada jutsu. Em <b>Opções → Controles</b>, procure "Naruto": as teclas <span class="kbd">C</span> <span class="kbd">V</span> <span class="kbd">B</span> (jutsus) e <span class="kbd">J</span> (tela de jutsus, em construção).</li>
+  </ul>
+</div>
+
+<h2>5) Se ainda não aparecer: me mande o relatório</h2>
+<div class="card">
+  <p>Na pasta do script vai ter a pasta <b>RELATORIO</b> com:</p>
+  <ul class="check">
+    <li><span class="mono">RELATORIO.txt</span> — lista TODAS as pastas de versões/modpacks, o que tem em cada <span class="mono">mods</span> e a versão do Minecraft de cada uma (linha <span class="mono">inheritsFrom</span>);</li>
+    <li><span class="mono">LOG-raiz.txt</span> e <span class="mono">LOG-&lt;modpack&gt;.txt</span> — o log do jogo de cada perfil;</li>
+    <li><span class="mono">CRASH-*</span> — se o jogo tiver travado, o relatório do crash aparece aqui.</li>
+  </ul>
+  <p>Me envie o <span class="mono">RELATORIO.txt</span> + os <span class="mono">LOG-*.txt</span> + um print da tela <b>Mods</b> do jogo. Com isso eu sei exatamente o que está acontecendo: pasta errada, versão errada ou travamento — e corrijo.</p>
+</div>
+
+<h2>6) Modo manual (se preferir sem script)</h2>
+<div class="card">
+  <div class="passo"><div class="n">1</div><div>Abra <span class="mono">%appdata%\.minecraft</span> (cole isso na barra de endereço do Explorador).</div></div>
+  <div class="passo"><div class="n">2</div><div>Para a <b>versão normal</b>: copie o <span class="mono">narutoanimemod-26.3-v0.1.1.jar</span> para <span class="mono">.minecraft\mods</span> (crie a pasta se não existir).</div></div>
+  <div class="passo"><div class="n">3</div><div>Para o <b>modpack</b>: copie o mesmo jar para <span class="mono">.minecraft\versions\Naruto Anime Mod 0.1.0\mods</span> (crie a pasta <span class="mono">mods</span> se não existir).</div></div>
+  <div class="passo"><div class="n">4</div><div>Confirme que o arquivo termina em <b>.jar</b> (clique com o botão direito → Propriedades).</div></div>
+  <div class="passo"><div class="n">5</div><div>Abra o jogo pelo perfil certo e confira os 3 sinais do item 4.</div></div>
+  <details>
+    <summary>Ver o código completo do INSTALAR-MOD.bat (copiar e colar)</summary>
+    <p>Cole em um Bloco de Notas e salve como <span class="mono">INSTALAR-MOD.bat</span> (em "Salvar como", escolha <b>Todos os arquivos</b>), na mesma pasta do jar.</p>
+    <pre>@echo off
+setlocal EnableDelayedExpansion
+title Naruto Anime Mod 26.3 - Instalador + Relatorio
+color 0B
+
+rem ============================================================
+rem  INSTALAR-MOD.bat  -  Naruto Anime Mod [port 26.3 / Forge 66]
+rem  Codigo aberto MIT. Nada e apagado: o script apenas COPIA o
+rem  jar para a pasta certa e gera um RELATORIO para enviar.
+rem ============================================================
+
+set &quot;MC=%APPDATA%\.minecraft&quot;
+set &quot;HERE=%~dp0&quot;
+set &quot;RELDIR=%HERE%RELATORIO&quot;
+set &quot;JAR=&quot;
+set &quot;JARNAME=&quot;
+set &quot;JARBYTES=0&quot;
+set &quot;DEST=&quot;
+
+echo ============================================================
+echo    NARUTO ANIME MOD 26.3   -   INSTALADOR + RELATORIO
+echo ============================================================
+echo.
+echo  Feche o Minecraft antes de continuar.
+echo.
+
+if not exist &quot;%MC%&quot; (
+    echo  [ERRO] Nao encontrei a pasta:
+    echo         %MC%
+    echo.
+    echo  Se o seu Minecraft fica em outro lugar, extraia este
+    echo  arquivo para dentro da pasta .minecraft e rode de novo.
+    echo.
+    pause
+    exit /b 1
+)
+echo  Pasta do Minecraft: %MC%
+echo.
+
+rem ---------- 1. localizar o jar ----------
+for /f &quot;delims=&quot; %%F in (&#x27;dir /b /o-n &quot;%HERE%narutoanimemod*.jar&quot; 2^&gt;nul&#x27;) do set &quot;JAR=%HERE%%%F&quot;
+if not defined JAR for /f &quot;delims=&quot; %%F in (&#x27;dir /b /o-n &quot;%USERPROFILE%\Downloads\narutoanimemod*.jar&quot; 2^&gt;nul&#x27;) do set &quot;JAR=%USERPROFILE%\Downloads\%%F&quot;
+if not defined JAR (
+    echo  [ATENCAO] Nao encontrei nenhum arquivo narutoanimemod*.jar
+    echo            nesta pasta nem na pasta Downloads.
+    echo.
+    echo  Dica: arraste o arquivo .jar para dentro desta janela
+    echo        preta e aperte ENTER.
+    echo.
+    set /p &quot;JAR=Jar: &quot;
+    set &quot;JAR=!JAR:&quot;=!&quot;
+)
+if defined JAR (
+    for %%F in (&quot;!JAR!&quot;) do ( set &quot;JARNAME=%%~nxF&quot; &amp; set &quot;JARBYTES=%%~zF&quot; )
+    set /a JARKB=JARBYTES/1024
+    echo  Arquivo: !JARNAME! - !JARKB! KB
+    if !JARBYTES! GTR 524288 (
+        echo.
+        echo  *** AVISO IMPORTANTE ***
+        echo  Este arquivo tem !JARKB! KB. O jar certo do port 26.3 tem
+        echo  cerca de 50 KB. Arquivos de 20 MB / 40 MB / 100 MB sao os
+        echo  mods ANTIGOS de 1.7.10 ou 1.20 e NAO funcionam no 26.3.
+        echo  Use SOMENTE o narutoanimemod-26.3-*.jar do GitHub.
+        echo.
+    )
+    echo.
+)
+
+:menu
+echo ------------------------------------------------------------
+echo  Onde instalar?
+echo.
+echo    [1] Versao normal Forge 26.3  ....  %MC%\mods
+echo    [2] Modpack do TLauncher      ....  %MC%\versions\NOME\mods
+echo    [3] Instalar nos dois + relatorio
+echo    [4] Somente gerar o RELATORIO - nao instala nada
+echo    [0] Sair
+echo.
+set /p &quot;OP=Digite o numero e aperte ENTER: &quot;
+echo.
+
+if &quot;!OP!&quot;==&quot;0&quot; goto :fim
+if &quot;!OP!&quot;==&quot;1&quot; goto :inst_raiz
+if &quot;!OP!&quot;==&quot;2&quot; goto :inst_pack
+if &quot;!OP!&quot;==&quot;3&quot; goto :inst_tudo
+if &quot;!OP!&quot;==&quot;4&quot; goto :relatorio
+echo  Opcao invalida.
+goto :menu
+
+:inst_raiz
+set &quot;DEST=%MC%&quot;
+call :copiar
+goto :relatorio
+
+:inst_pack
+echo  Pastas em %MC%\versions :
+echo.
+set /a N=0
+for /d %%D in (&quot;%MC%\versions\*&quot;) do (
+    set /a N+=1
+    set &quot;P[!N!]=%%~nxD&quot;
+    echo    [!N!] %%~nxD
+)
+if !N! EQU 0 (
+    echo.
+    echo  [ERRO] Nenhuma pasta em %MC%\versions
+    echo.
+    pause
+    goto :menu
+)
+echo.
+echo    [0] voltar ao menu
+echo    Dica: o seu modpack tem Naruto no nome, escolha ele.
+echo.
+set /p &quot;PN=Numero da pasta do modpack: &quot;
+if &quot;!PN!&quot;==&quot;0&quot; goto :menu
+set &quot;NOME=!P[%PN%]!&quot;
+if not defined NOME (
+    echo  Numero invalido.
+    echo.
+    goto :inst_pack
+)
+set &quot;DEST=%MC%\versions\!NOME!&quot;
+call :copiar
+goto :relatorio
+
+:inst_tudo
+set &quot;DEST=%MC%&quot;
+call :copiar
+for /d %%D in (&quot;%MC%\versions\*&quot;) do (
+    set &quot;PUT=&quot;
+    if exist &quot;%%~fD\mods&quot; set &quot;PUT=1&quot;
+    echo %%~nxD | findstr /i /c:&quot;naruto&quot; &gt;nul &amp;&amp; set &quot;PUT=1&quot;
+    if defined PUT (
+        set &quot;DEST=%%~fD&quot;
+        call :copiar
+    )
+)
+goto :relatorio
+
+:copiar
+if not defined JAR (
+    echo  [ERRO] Nenhum jar selecionado. Nada foi instalado.
+    echo.
+    exit /b 1
+)
+if not exist &quot;!DEST!&quot; (
+    echo  [ERRO] A pasta nao existe: !DEST!
+    echo.
+    exit /b 1
+)
+if not exist &quot;!DEST!\mods&quot; mkdir &quot;!DEST!\mods&quot;
+copy /y &quot;!JAR!&quot; &quot;!DEST!\mods\&quot; &gt;nul
+if errorlevel 1 (
+    echo  [ERRO] Falha ao copiar para !DEST!\mods
+) else (
+    echo  [OK] Instalado em: !DEST!\mods\!JARNAME!
+)
+echo.
+exit /b 0
+
+:relatorio
+if not exist &quot;%RELDIR%&quot; mkdir &quot;%RELDIR%&quot;
+set &quot;REP=%RELDIR%\RELATORIO.txt&quot;
+echo RELATORIO - Naruto Anime Mod 26.3 &gt; &quot;%REP%&quot;
+echo Data: %DATE% %TIME% &gt;&gt; &quot;%REP%&quot;
+echo Pasta .minecraft: %MC% &gt;&gt; &quot;%REP%&quot;
+echo Jar usado: !JAR! &gt;&gt; &quot;%REP%&quot;
+echo Ultimo destino instalado: !DEST! &gt;&gt; &quot;%REP%&quot;
+echo. &gt;&gt; &quot;%REP%&quot;
+echo ==== [A] CONTEUDO DE %MC%\mods ==== &gt;&gt; &quot;%REP%&quot;
+if exist &quot;%MC%\mods&quot; (dir &quot;%MC%\mods&quot; &gt;&gt; &quot;%REP%&quot;) else (echo PASTA NAO EXISTE &gt;&gt; &quot;%REP%&quot;)
+echo. &gt;&gt; &quot;%REP%&quot;
+echo ==== [B] PASTAS DE VERSAO DO LAUNCHER ==== &gt;&gt; &quot;%REP%&quot;
+for /d %%D in (&quot;%MC%\versions\*&quot;) do (
+    echo --- %%~nxD &gt;&gt; &quot;%REP%&quot;
+    if exist &quot;%%~fD\%%~nxD.json&quot; findstr /i /c:&quot;inheritsFrom&quot; &quot;%%~fD\%%~nxD.json&quot; &gt;&gt; &quot;%REP%&quot; 2&gt;nul
+    if exist &quot;%%~fD\mods&quot; (
+        dir /b &quot;%%~fD\mods&quot; &gt;&gt; &quot;%REP%&quot;
+    ) else (
+        echo     [sem pasta mods] &gt;&gt; &quot;%REP%&quot;
+    )
+)
+echo. &gt;&gt; &quot;%REP%&quot;
+echo ==== [C] LOGS E CRASHES ==== &gt;&gt; &quot;%REP%&quot;
+if exist &quot;%MC%\logs\latest.log&quot; (
+    copy /y &quot;%MC%\logs\latest.log&quot; &quot;%RELDIR%\LOG-raiz.txt&quot; &gt;nul
+    echo copiado: LOG-raiz.txt &gt;&gt; &quot;%REP%&quot;
+)
+for /d %%D in (&quot;%MC%\versions\*&quot;) do (
+    set &quot;PUT=&quot;
+    if exist &quot;%%~fD\mods&quot; set &quot;PUT=1&quot;
+    echo %%~nxD | findstr /i /c:&quot;naruto&quot; &gt;nul &amp;&amp; set &quot;PUT=1&quot;
+    if defined PUT (
+        if exist &quot;%%~fD\logs\latest.log&quot; (
+            copy /y &quot;%%~fD\logs\latest.log&quot; &quot;%RELDIR%\LOG-%%~nxD.txt&quot; &gt;nul
+            echo copiado: LOG-%%~nxD.txt &gt;&gt; &quot;%REP%&quot;
+        )
+        if exist &quot;%%~fD\crash-reports&quot; (
+            xcopy /y /i /e &quot;%%~fD\crash-reports&quot; &quot;%RELDIR%\CRASH-%%~nxD\&quot; &gt;nul 2&gt;nul
+            echo copiado: CRASH-%%~nxD &gt;&gt; &quot;%REP%&quot;
+        )
+    )
+)
+if exist &quot;%MC%\crash-reports&quot; (
+    xcopy /y /i /e &quot;%MC%\crash-reports&quot; &quot;%RELDIR%\CRASH-raiz\&quot; &gt;nul 2&gt;nul
+    echo copiado: CRASH-raiz &gt;&gt; &quot;%REP%&quot;
+)
+echo. &gt;&gt; &quot;%REP%&quot;
+echo ==== [D] SISTEMA ==== &gt;&gt; &quot;%REP%&quot;
+ver &gt;&gt; &quot;%REP%&quot;
+echo. &gt;&gt; &quot;%REP%&quot;
+echo ==== FIM ==== &gt;&gt; &quot;%REP%&quot;
+
+echo.
+echo ============================================================
+echo  PRONTO!
+echo.
+echo  1. O relatorio esta em: %RELDIR%
+echo  2. Abra o Minecraft na versao Forge 26.3 ou no modpack
+echo  3. Confira a tela Mods: deve aparecer Naruto Anime Mod
+echo  4. Depois de jogar, rode este script de novo e escolha [4]
+echo     para gerar um relatorio com o log NOVO.
+echo.
+echo  Envie no chat: o arquivo RELATORIO.txt + os LOG-*.txt
+echo  e um print da tela Mods do jogo.
+echo ============================================================
+start &quot;&quot; &quot;%RELDIR%&quot;
+pause
+goto :fim
+
+:fim
+endlocal
+exit /b 0
+</pre>
+  </details>
+</div>
+
+<div class="rodape">
+  <p><b>Créditos:</b> Naruto Anime Mod original (1.7.10) por <b>Mathioks</b> · Naruto Anime Mod Plus+ por <b>ninjaespio1000</b> · sistema de teclas C/V/B referenciado do NarutoMod de <b>Sekwah41's</b> (MIT) · Naruto criado por <b>Masashi Kishimoto</b> · port 26.3 por <b>willianstriker</b>.</p>
+  <p>Código aberto (MIT): <span class="mono">github.com/willianstriker/Minecraft-Project-Naruto-Anime-Mod</span></p>
+</div>
+</div>
+</body>
+</html>

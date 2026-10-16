@@ -27,14 +27,18 @@ public final class NarutoAnimeMod {
         FMLCommonSetupEvent.getBus(bus).addListener(this::setup);
         ModTriggers.TRIGGERS.register(bus);
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        // 26.3: o cliente inicia ANTES do FMLCommonSetupEvent. As teclas C/V/B precisam
+        // ser registradas ja aqui, senao o RegisterKeyMappingsEvent passa antes do listener
+        // (bug corrigido na v0.1.1: as teclas simplesmente nao existiam no jogo).
+        if (net.minecraftforge.fml.loading.FMLEnvironment.dist.isClient()) {
+            com.mathioks.narutomod.client.NarutoKeys.registrarListeners();
+        }
     }
 
     private void setup(final FMLCommonSetupEvent event) {
         ModNetwork.init();
         JutsuTable.init();
-        if (net.minecraftforge.fml.loading.FMLEnvironment.dist.isClient()) {
-            com.mathioks.narutomod.client.NarutoKeys.init();
-        }
         LOGGER.info("[Naruto Anime Mod] {} jutsus ativos no sistema de combos C/V/B", JutsuTable.todos().size());
     }
 }
