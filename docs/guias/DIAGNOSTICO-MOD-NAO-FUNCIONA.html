@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O mod não funciona? — Diagnóstico passo a passo</title>
+</head>
+<body style="margin:0;background:#0f1115;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#e8e8ee">
+<div style="max-width:900px;margin:0 auto;padding:26px 18px 70px">
+
+  <div style="background:linear-gradient(135deg,#7f1d1d,#b91c1c);border-radius:16px;padding:24px 26px">
+    <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#fecaca">Solução de problemas</div>
+    <h1 style="margin:6px 0 8px;font-size:27px;line-height:1.2">O mod não funcionou? Vamos descobrir o porquê</h1>
+    <div style="color:#fee2e2;font-size:14px;line-height:1.6">
+      Faça os 4 testes abaixo <b>na ordem</b>. O primeiro que falhar é a causa do problema.
+    </div>
+  </div>
+
+  <!-- ERRO MAIS COMUM -->
+  <div style="background:#1c1917;border:2px solid #f59e0b;border-radius:14px;padding:18px 20px;margin-top:20px">
+    <div style="font-size:16px;font-weight:800;color:#fbbf24;margin-bottom:10px">⚠️ O erro nº 1 que as pessoas cometem</div>
+    <div style="font-size:14px;line-height:1.85;color:#e7e5e4">
+      <b style="color:#f87171">❌ ERRADO:</b> colocar o arquivo em <code style="background:#0d1117;padding:2px 6px;border-radius:5px">versions/mods</code><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a8a29e">(essa pasta não existe / não serve para mods)</span><br><br>
+      <b style="color:#4ade80">✅ CERTO:</b> colocar o arquivo em <code style="background:#0d1117;padding:2px 6px;border-radius:5px">.minecraft/mods</code><br><br>
+      <b>Como saber se você está na pasta certa:</b><br>
+      A pasta <code style="background:#0d1117;padding:2px 6px;border-radius:5px">mods</code> fica <b>no mesmo lugar</b> onde estão as pastas
+      <code style="background:#0d1117;padding:2px 6px;border-radius:5px">saves</code>,
+      <code style="background:#0d1117;padding:2px 6px;border-radius:5px">logs</code>,
+      <code style="background:#0d1117;padding:2px 6px;border-radius:5px">config</code> e o arquivo <code style="background:#0d1117;padding:2px 6px;border-radius:5px">options.txt</code>.
+    </div>
+    <div style="background:#0d1117;border:1px solid #30363d;border-radius:10px;padding:14px;margin-top:12px;font-family:ui-monospace,monospace;font-size:12.5px;line-height:1.9;color:#c9d1d9">
+      📁 .minecraft/<br>
+      &nbsp;&nbsp;├── 📁 <b style="color:#4ade80">mods</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;← <b style="color:#4ade80">O JAR VAI AQUI</b><br>
+      &nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── 📄 narutoanimemod-26.3-v0.1.0.jar<br>
+      &nbsp;&nbsp;├── 📁 saves<br>
+      &nbsp;&nbsp;├── 📁 logs<br>
+      &nbsp;&nbsp;├── 📁 config<br>
+      &nbsp;&nbsp;└── 📄 options.txt
+    </div>
+    <div style="font-size:13px;color:#a8a29e;margin-top:12px">
+      💡 <b>No TLauncher</b>, use o botão <b style="color:#fff">"Open folder" / "Abrir pasta"</b> para abrir o lugar certo automaticamente. Não adivinhe o caminho!
+    </div>
+  </div>
+
+  <!-- TESTE 1 -->
+  <div style="margin-top:28px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="width:44px;height:44px;border-radius:50%;background:#2563eb;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px">1</div>
+      <div style="font-size:19px;font-weight:700">O jogo está rodando com FORGE?</div>
+    </div>
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-top:12px;font-size:14px;line-height:1.8;color:#c9cdd6">
+      Abra o Minecraft e olhe o <b>canto inferior esquerdo</b> da tela do menu principal:
+      <div style="display:flex;gap:14px;margin:16px 0;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <div style="background:#000;border:2px solid #4ade80;border-radius:10px;padding:14px;font-family:ui-monospace,monospace;font-size:12.5px;color:#ddd">
+            <div style="color:#ffd166">Singleplayer&nbsp;&nbsp;Multiplayer</div>
+            <div style="color:#9ca3af;margin-top:8px">Options...&nbsp;&nbsp;Quit Game</div>
+            <div style="color:#4ade80;margin-top:16px;font-weight:700">Minecraft 26.3 / <span style="color:#4ade80">Forge 66.0.12</span></div>
+          </div>
+          <div style="color:#4ade80;font-size:13px;margin-top:8px;text-align:center">✅ <b>CERTO</b> — aparece "Forge"</div>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <div style="background:#000;border:2px solid #f87171;border-radius:10px;padding:14px;font-family:ui-monospace,monospace;font-size:12.5px;color:#ddd">
+            <div style="color:#ffd166">Singleplayer&nbsp;&nbsp;Multiplayer</div>
+            <div style="color:#9ca3af;margin-top:8px">Options...&nbsp;&nbsp;Quit Game</div>
+            <div style="color:#f87171;margin-top:16px;font-weight:700">Minecraft 26.3</div>
+          </div>
+          <div style="color:#f87171;font-size:13px;margin-top:8px;text-align:center">❌ <b>ERRADO</b> — sem Forge, nada de mod vai funcionar</div>
+        </div>
+      </div>
+      <b style="color:#ffd166">Se não aparecer "Forge":</b> você está abrindo o Minecraft normal. Precisa instalar o Forge (veja o passo extra no final desta página).
+    </div>
+  </div>
+
+  <!-- TESTE 2 -->
+  <div style="margin-top:28px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="width:44px;height:44px;border-radius:50%;background:#2563eb;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px">2</div>
+      <div style="font-size:19px;font-weight:700">O jogo vê o mod?</div>
+    </div>
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-top:12px;font-size:14px;line-height:1.8;color:#c9cdd6">
+      No menu principal, clique no botão <b style="color:#fff">"Mods"</b> (perto de Options/Opções).<br>
+      Procure na lista: deve ter <b style="color:#4ade80">Naruto Anime Mod</b>.
+      <div style="background:#0d1117;border:1px solid #30363d;border-radius:10px;padding:14px;margin:14px 0;font-family:ui-monospace,monospace;font-size:12.5px;color:#c9d1d9;line-height:1.9">
+        <div style="color:#8b93a3;margin-bottom:6px">Mods (2)</div>
+        <div>🔧 Forge&nbsp;&nbsp;<span style="color:#8b93a3">66.0.12</span></div>
+        <div style="color:#4ade80">🍥 <b>Naruto Anime Mod</b>&nbsp;&nbsp;<span style="color:#8b93a3">1.0.0</span>&nbsp;&nbsp;<span style="color:#8b93a3">— Mathioks, ninjaespio1000, Sekwah41's, willianstriker</span></div>
+      </div>
+      <b style="color:#ffd166">Se o mod não está na lista:</b> o arquivo está na pasta errada, é a versão errada do Minecraft, ou o Forge não está ativo.
+    </div>
+  </div>
+
+  <!-- TESTE 3 -->
+  <div style="margin-top:28px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="width:44px;height:44px;border-radius:50%;background:#2563eb;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px">3</div>
+      <div style="font-size:19px;font-weight:700">O teste definitivo: o arquivo de log</div>
+    </div>
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-top:12px;font-size:14px;line-height:1.8;color:#c9cdd6">
+      Este teste <b>nunca falha</b>: ele mostra se o mod carregou, mesmo que algo dê errado depois.<br><br>
+      <b style="color:#fff">Como fazer:</b>
+      <div style="background:#0d1117;border-left:3px solid #2563eb;border-radius:8px;padding:14px 16px;margin:12px 0;line-height:2">
+        1. Abra a pasta <code style="background:#161b22;padding:2px 6px;border-radius:5px">.minecraft/logs</code><br>
+        2. Abra o arquivo <code style="background:#161b22;padding:2px 6px;border-radius:5px">latest.log</code> com o <b>Bloco de Notas</b><br>
+        3. Aperte <b>Ctrl + F</b> e procure por: <code style="background:#161b22;padding:2px 6px;border-radius:5px">jutsus ativos</code>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
+        <div style="flex:1;min-width:280px;background:#0d1117;border:2px solid #4ade80;border-radius:10px;padding:14px">
+          <div style="color:#4ade80;font-weight:700;font-size:13px;margin-bottom:8px">✅ ACHOU?</div>
+          <div style="font-family:ui-monospace,monospace;font-size:11.5px;color:#c9d1d9;line-height:1.8">
+            [Naruto Anime Mod] canal de rede iniciado (v1)<br>
+            [Naruto Anime Mod] <b>33 jutsus ativos</b> no sistema de combos C/V/B
+          </div>
+          <div style="color:#a8a29e;font-size:12.5px;margin-top:10px">→ O mod <b>está carregando</b>. O problema é dentro do jogo (veja o Teste 4).</div>
+        </div>
+        <div style="flex:1;min-width:280px;background:#0d1117;border:2px solid #f87171;border-radius:10px;padding:14px">
+          <div style="color:#f87171;font-weight:700;font-size:13px;margin-bottom:8px">❌ NÃO ACHOU?</div>
+          <div style="color:#a8a29e;font-size:12.5px;line-height:1.8">O mod não está sendo carregado. Causas possíveis:<br>
+            • arquivo na pasta errada<br>
+            • jogando <b>sem Forge</b><br>
+            • arquivo virou <code>.zip</code> em vez de <code>.jar</code><br>
+            • versão diferente do Minecraft (este mod é só para <b>26.3</b>)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTE 4 -->
+  <div style="margin-top:28px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="width:44px;height:44px;border-radius:50%;background:#2563eb;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px">4</div>
+      <div style="font-size:19px;font-weight:700">O mod carregou, mas as teclas não fazem nada?</div>
+    </div>
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-top:12px;font-size:14px;line-height:1.8;color:#c9cdd6">
+      Aí é bem mais simples — provavelmente as teclas foram para outro lugar ou são outra tecla:
+      <div style="background:#0d1117;border-left:3px solid #2563eb;border-radius:8px;padding:14px 16px;margin:12px 0;line-height:2">
+        1. <b>Opções → Controles → Teclas</b><br>
+        2. Role até a categoria <b style="color:#4ade80">Naruto Anime Mod</b><br>
+        3. Confira as teclas: <b>C</b>, <b>V</b> e <b>B</b><br>
+        4. Se estiverem vazias, clique e defina você mesmo<br>
+        5. Clique em <b>Concluído</b> e teste no mundo
+      </div>
+      <b>Teste básico:</b> aperte <b>C</b> e espere meio segundo → deve aparecer uma mensagem no chat.
+      Se não aparecer nada, veja se você está <b>dentro do mundo</b> (não no menu) e se o jogo não está pausado.
+    </div>
+  </div>
+
+  <!-- ERROS COMUNS -->
+  <div style="margin-top:30px;background:#1d1a10;border:1px solid #4d3f14;border-radius:14px;padding:18px 20px">
+    <div style="font-size:16px;font-weight:800;color:#fbbf24;margin-bottom:14px">🔧 Os 6 erros mais comuns (confira todos)</div>
+    <table style="width:100%;border-collapse:collapse;font-size:13.5px;color:#ddd2b8">
+      <tr style="border-bottom:1px solid #4d3f14">
+        <th style="text-align:left;padding:9px 6px">❌ Erro</th>
+        <th style="text-align:left;padding:9px 6px">✅ Correção</th>
+      </tr>
+      <tr style="border-bottom:1px solid #3a3010">
+        <td style="padding:9px 6px">Colocou em <code>versions/mods</code></td>
+        <td style="padding:9px 6px">Use <code>.minecraft/mods</code></td>
+      </tr>
+      <tr style="border-bottom:1px solid #3a3010">
+        <td style="padding:9px 6px">Colocou o arquivo <b>.zip</b> na pasta mods</td>
+        <td style="padding:9px 6px">O Minecraft só lê <b>.jar</b> — extraia o zip</td>
+      </tr>
+      <tr style="border-bottom:1px solid #3a3010">
+        <td style="padding:9px 6px">Abrindo a versão "Release 26.3" (sem Forge)</td>
+        <td style="padding:9px 6px">Abra a versão <b>forge-26.3-66.0.12</b></td>
+      </tr>
+      <tr style="border-bottom:1px solid #3a3010">
+        <td style="padding:9px 6px">Jogo rodando com Java 17 ou 21</td>
+        <td style="padding:9px 6px">O 26.3 exige <b>Java 25</b> — mude no launcher</td>
+      </tr>
+      <tr style="border-bottom:1px solid #3a3010">
+        <td style="padding:9px 6px">Tentando em outra versão (1.20, 1.7.10...)</td>
+        <td style="padding:9px 6px">Este mod é <b>exclusivo para 26.3</b></td>
+      </tr>
+      <tr>
+        <td style="padding:9px 6px">Colocou em outro <code>.minecraft</code> (o launcher usa outro)</td>
+        <td style="padding:9px 6px">Use <b>"Open folder"</b> do TLauncher</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- INSTALAR FORGE -->
+  <div style="margin-top:30px;background:#0f172a;border:1px solid #1e40af;border-radius:14px;padding:20px">
+    <div style="font-size:17px;font-weight:800;color:#60a5fa;margin-bottom:12px">🛠️ Extra: como instalar o Forge 26.3 (se o Teste 1 falhou)</div>
+    <div style="font-size:14px;line-height:1.9;color:#cbd5e1">
+      <div style="background:#0d1117;border-left:3px solid #3b82f6;border-radius:8px;padding:14px 16px;line-height:2.1">
+        <b>1.</b> Baixe o instalador do Forge 26.3:<br>
+        <span style="font-family:ui-monospace,monospace;font-size:12px;color:#7dd3fc;word-break:break-all">https://maven.minecraftforge.net/net/minecraftforge/forge/26.3-66.0.12/forge-26.3-66.0.12-installer.jar</span><br>
+        <b>2.</b> Dê <b>2 cliques</b> no arquivo baixado (se abrir perguntando como abrir, escolha Java)<br>
+        <b>3.</b> Marque <b>"Install client"</b> e aponte a pasta para o seu <code>.minecraft</code> (use o "Open folder" do TLauncher para descobrir qual é)<br>
+        <b>4.</b> Clique em <b>OK</b> e espere terminar<br>
+        <b>5.</b> <b>Reinicie o TLauncher</b> → na lista de versões vai aparecer <b>forge-26.3-66.0.12</b><br>
+        <b>6.</b> Selecione essa versão e abra o jogo <b>uma vez</b> (isso cria a pasta mods) → feche<br>
+        <b>7.</b> Coloque o <code>.jar</code> em <code>.minecraft/mods</code> → abra o jogo de novo pela versão Forge
+      </div>
+      <div style="margin-top:14px;color:#93c5fd;font-size:13.5px">
+        💡 <b>Se o instalador não abrir:</b> falta o <b>Java 25</b> no PC.
+        Baixe em <span style="color:#7dd3fc">adoptium.net</span> (escolha "Temurin 25" para Windows) e instale.
+      </div>
+    </div>
+  </div>
+
+  <!-- SE NADA RESOLVER -->
+  <div style="margin-top:28px;background:#171a21;border:1px solid #3a3a45;border-radius:14px;padding:18px 20px">
+    <div style="font-size:16px;font-weight:700;color:#e8e8ee;margin-bottom:10px">📨 Se ainda não funcionar, me mande isto:</div>
+    <div style="font-size:14px;line-height:2;color:#c9cdd6">
+      1. <b>Print da tela</b> do menu principal do jogo (mostrando o canto inferior esquerdo)<br>
+      2. <b>Print</b> da lista de Mods (menu principal → botão Mods)<br>
+      3. O arquivo <b>logs/latest.log</b> (ou as últimas 50 linhas dele)<br>
+      4. Print do TLauncher mostrando <b>qual versão está selecionada</b>
+    </div>
+    <div style="font-size:13px;color:#8b93a3;margin-top:12px">
+      Com essas 4 informações eu descubro a causa exata em segundos. 🙂
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
