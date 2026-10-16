@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como colocar o mod no GitHub — passo a passo</title>
+</head>
+<body style="margin:0;background:#0f1115;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#e8e8ee">
+
+<div style="max-width:880px;margin:0 auto;padding:26px 18px 70px">
+
+  <!-- CABEÇALHO -->
+  <div style="background:linear-gradient(135deg,#1f6feb,#0d419d);border-radius:16px;padding:24px 26px">
+    <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#bcd8ff">Guia do zero</div>
+    <h1 style="margin:6px 0 8px;font-size:27px;line-height:1.2">Como colocar o mod no seu GitHub</h1>
+    <div style="color:#d6e6ff;font-size:14px;line-height:1.6">
+      ✅ <b>Sem instalar nada</b> &nbsp;·&nbsp; ✅ <b>Sem usar terminal/comando</b> &nbsp;·&nbsp; ✅ <b>Só o navegador</b><br>
+      Tempo: cerca de <b>10 minutos</b>. Vá com calma, um passo por vez.
+    </div>
+  </div>
+
+  <!-- ANTES DE COMEÇAR -->
+  <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;margin-top:18px">
+    <div style="font-size:16px;font-weight:700;color:#ffd166;margin-bottom:10px">📦 Antes de começar — os arquivos</div>
+    <div style="font-size:14px;line-height:1.75;color:#c9cdd6">
+      Baixe o arquivo <b style="color:#fff">NarutoAnimeMod-26.3-PARA-O-GITHUB.zip</b> (está na mesma pasta deste guia).<br>
+      Ele contém <b>66 arquivos</b> — o código do mod, a documentação e o mod pronto para jogar.
+    </div>
+  </div>
+
+  <!-- PASSO 1 -->
+  <div style="margin-top:26px">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+      <div style="width:42px;height:42px;border-radius:50%;background:#238636;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px">1</div>
+      <div style="font-size:20px;font-weight:700">Criar sua conta no GitHub (se ainda não tem)</div>
+    </div>
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;font-size:14px;line-height:1.85;color:#c9cdd6">
+      Abra o navegador e vá em <b style="color:#7cc4ff">github.com</b><br>
+      • Se já tem conta: clique em <b>Sign in</b> e faça login<br>
+      • Se não tem: clique em <b>Sign up</b>, coloque seu e-mail, uma senha e escolha um nome de usuário<br>
+      <span style="color:#8b93a3">Anote seu nome de usuário — você vai precisar dele no passo 3.</span>
+    </div>
+  </div>
+
+  <!-- PASSO 2 -->
+  <div style="margin-top:26px">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+      <div style="width:42px;height:42px;border-radius:50%;background:#238636;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px">2</div>
+      <div style="font-size:20px;font-weight:700">Extrair o zip que você baixou</div>
+    </div>
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;font-size:14px;line-height:1.85;color:#c9cdd6">
+      Vá na pasta <b>Downloads</b> do seu computador.<br>
+      • <b>Windows:</b> clique com o botão <b>direito</b> no arquivo <code style="background:#0d1117;padding:2px 6px;border-radius:5px">NarutoAnimeMod-26.3-PARA-O-GITHUB.zip</code> → <b>Extrair Tudo...</b> → <b>Extrair</b><br>
+      • <b>Mac:</b> clique <b>2 vezes</b> no arquivo (ele extrai sozinho)<br><br>
+      Vai aparecer uma pasta chamada <b style="color:#fff">NarutoAnimeMod-26.3</b>. <b>Abra ela.</b><br>
+      <span style="color:#8b93a3">Dentro você verá: README.md, build.gradle, src, docs, tools, jar...</span>
+    </div>
+  </div>
+
+  <!-- PASSO 3 -->
+  <div style="margin-top:26px">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+      <div style="width:42px;height:42px;border-radius:50%;background:#238636;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px">3</div>
+      <div style="font-size:20px;font-weight:700">Criar o repositório (a "pasta" no GitHub)</div>
+    </div>
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;font-size:14px;line-height:1.8;color:#c9cdd6">
+      No navegador, abra: <b style="color:#7cc4ff">github.com/new</b><br><br>
+      Você vai ver um formulário parecido com este:
+
+      <!-- MOCK DO GITHUB -->
+      <div style="background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:18px;margin:14px 0">
+        <div style="font-size:13px;color:#8b93a3;margin-bottom:6px">Repository name</div>
+        <div style="background:#161b22;border:2px solid #238636;border-radius:8px;padding:10px 12px;font-size:14px;color:#fff;display:flex;justify-content:space-between">
+          <span>NarutoAnimeMod-26.3</span>
+          <span style="color:#8b93a3">✔ disponível</span>
+        </div>
+        <div style="font-size:12.5px;color:#ff7b72;margin-top:14px;line-height:1.7">
+          ⚠️ <b>MUITO IMPORTANTE:</b> NÃO marque nenhuma dessas caixinhas:<br>
+          ☐ Add a README file &nbsp;&nbsp; ☐ Add .gitignore &nbsp;&nbsp; ☐ Choose a license
+        </div>
+        <div style="color:#8b93a3;font-size:12.5px;margin-top:10px">(se marcar, o GitHub cria arquivos que vão dar conflito no passo 5)</div>
+        <div style="background:#238636;color:#fff;border-radius:8px;padding:10px 18px;display:inline-block;font-weight:700;font-size:14px;margin-top:16px">Create repository</div>
+      </div>
+
+      Digite o nome <b style="color:#fff">NarutoAnimeMod-26.3</b>, deixe em <b>Public</b> e clique no botão verde <b>Create repository</b>.
+    </div>
+  </div>
+
+  <!-- PASSO 4 -->
+  <div style="margin-top:26px">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+      <div style="width:42px;height:42px;border-radius:50%;background:#238636;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px">4</div>
+      <div style="font-size:20px;font-weight:700">Enviar os arquivos (a parte mágica)</div>
+    </div>
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;font-size:14px;line-height:1.8;color:#c9cdd6">
+      Depois de criar, o GitHub mostra uma página dizendo <i>"Quick setup"</i> com alguns comandos.
+      <b style="color:#ffd166">Ignore esses comandos.</b> Em vez disso, procure o link azul escrito:<br>
+
+      <div style="background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:18px;margin:14px 0;text-align:center">
+        <span style="color:#58a6ff;font-size:15px;border-bottom:1px dashed #58a6ff">uploading an existing file</span>
+        <div style="color:#8b93a3;font-size:12.5px;margin-top:8px">← clique nesse link</div>
+      </div>
+
+      Isso abre uma página que diz <b>"Drag files here to add them to your repository"</b>.<br><br>
+
+      <b style="color:#fff">Agora faça isso:</b>
+      <div style="background:#0d1117;border-left:3px solid #238636;border-radius:8px;padding:14px 16px;margin:12px 0;line-height:1.9">
+        1. Volte para a pasta <b>NarutoAnimeMod-26.3</b> que você extraiu<br>
+        2. Aperte <b>Ctrl + A</b> (Mac: <b>Cmd + A</b>) para selecionar <b>TODOS</b> os arquivos de dentro dela<br>
+        3. <b>Arraste</b> tudo para dentro do navegador, na área que diz "Drag files here"<br>
+        4. Espere a lista de arquivos aparecer (pode levar uns segundos)
+      </div>
+
+      <span style="color:#8b93a3">⚠️ Dica: selecione o que está <b>dentro</b> da pasta (README.md, build.gradle, src, docs...), e não a pasta inteira.</span>
+    </div>
+  </div>
+
+  <!-- PASSO 5 -->
+  <div style="margin-top:26px">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+      <div style="width:42px;height:42px;background:#238636;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px">5</div>
+      <div style="font-size:20px;font-weight:700">Confirmar o envio</div>
+    </div>
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;font-size:14px;line-height:1.8;color:#c9cdd6">
+      Role a página até o final. Você vai ver:
+      <div style="background:#0d1117;border:1px solid #30363d;border-radius:12px;padding:16px;margin:14px 0">
+        <div style="font-size:13px;color:#8b93a3;margin-bottom:6px">Commit changes</div>
+        <div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px 12px;font-size:14px;color:#e8e8ee">Add files via upload</div>
+        <div style="background:#238636;color:#fff;border-radius:8px;padding:10px 18px;display:inline-block;font-weight:700;font-size:14px;margin-top:12px">Commit changes</div>
+      </div>
+      Clique no botão verde <b>Commit changes</b> e espere alguns segundos.
+    </div>
+  </div>
+
+  <!-- PASSO 6 -->
+  <div style="margin-top:26px">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+      <div style="width:42px;height:42px;background:#238636;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px">6</div>
+      <div style="font-size:20px;font-weight:700">Pronto! Confira o resultado</div>
+    </div>
+    <div style="background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:18px 20px;font-size:14px;line-height:1.8;color:#c9cdd6">
+      A página vai mostrar seus arquivos, e o seu <b>README</b> aparece bonito embaixo, já formatado. 🎉<br><br>
+      O endereço do seu repositório será:<br>
+      <div style="background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:12px;margin-top:10px;font-family:ui-monospace,monospace;font-size:13.5px;color:#7cc4ff">
+        github.com/<b>SEU-USUARIO</b>/NarutoAnimeMod-26.3
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEMAS COMUNS -->
+  <div style="margin-top:34px;background:#1d1a10;border:1px solid #4d3f14;border-radius:14px;padding:18px 20px">
+    <div style="font-size:16px;font-weight:700;color:#ffd166;margin-bottom:12px">🔧 Se algo der errado</div>
+    <div style="font-size:13.5px;line-height:1.9;color:#ddd2b8">
+      <b>Não achei "uploading an existing file"</b><br>
+      → Na página do repositório, clique em <b>Add file</b> (botão ao lado do verde "Code") → <b>Upload files</b><br><br>
+
+      <b>O botão verde está cinza/apagado</b><br>
+      → Você não selecionou nenhum arquivo. Feche a página e refaça o passo 4.<br><br>
+
+      <b>Apareceu erro de "conflict" / "already exists"</b><br>
+      → Você marcou "Add a README file" ao criar o repositório. Solução: apague o repositório
+      (Settings → role até o fim → Delete this repository) e crie de novo <b>vazio</b>.<br><br>
+
+      <b>A área de arrastar não aceita minhas pastas</b><br>
+      → Use Chrome ou Edge (funcionam melhor). Se não der, envie em partes: primeiro os arquivos soltos
+      (README, build.gradle...), depois as pastas <code style="background:#0d1117;padding:2px 5px;border-radius:4px">src</code>,
+      <code style="background:#0d1117;padding:2px 5px;border-radius:4px">docs</code>,
+      <code style="background:#0d1117;padding:2px 5px;border-radius:4px">tools</code> e
+      <code style="background:#0d1117;padding:2px 5px;border-radius:4px">jar</code>.
+    </div>
+  </div>
+
+  <!-- DEPOIS -->
+  <div style="margin-top:26px;background:#12181f;border:1px solid #24313f;border-radius:14px;padding:18px 20px">
+    <div style="font-size:16px;font-weight:700;color:#7cc4ff;margin-bottom:10px">💡 E depois? Como atualizar mais tarde</div>
+    <div style="font-size:13.5px;line-height:1.9;color:#bcc9d6">
+      Quando eu te entregar a próxima versão (mais jutsus, HUD, tela de jutsus), você repete só os <b>passos 4 e 5</b>:
+      abre seu repositório, clica em <b>Add file → Upload files</b>, arrasta os arquivos novos e clica em <b>Commit changes</b>.
+      O GitHub guarda todo o histórico — nada é perdido.<br><br>
+      <b>Atalho:</b> se preferir, apague o arquivo antigo pela própria página do GitHub (ícone de lixeira) e suba o novo.
+    </div>
+  </div>
+
+  <div style="margin-top:26px;text-align:center;color:#6b7280;font-size:12.5px;line-height:1.8">
+    Travou em algum passo? Me diga <b>o número do passo</b> e o que apareceu na tela,<br>que eu te ajudo a destravar. 🙂
+  </div>
+
+</div>
+</body>
+</html>

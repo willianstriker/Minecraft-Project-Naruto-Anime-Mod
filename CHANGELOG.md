@@ -3,6 +3,20 @@
 Todas as mudanças relevantes deste projeto são documentadas aqui.
 O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
+## [Não lançado]
+
+### Alterado
+- **Licença trocada para MIT** — o código agora é aberto e qualquer pessoa pode
+  copiar, modificar e redistribuir, mantendo os créditos
+- **Créditos completos** adicionados ao `LICENSE.md` e ao `README.md`:
+  **Mathioks** (mod original), **ninjaespio1000** (Naruto Anime Mod Plus+),
+  **Sekwah41** (NarutoMod/SekCLib) e **Masashi Kishimoto** (obra Naruto)
+
+### Adicionado
+- `referencia/decompilado/` — código decompilado dos mods originais para consulta técnica
+- `docs/guias/` — guias de publicação e passo a passo
+- `dist/NarutoAnimeMod-26.3-v0.1.0.zip` — pacote pronto para o jogador (mod + documentação)
+
 ## [0.1.0] — 2026-10-15
 
 ### Adicionado

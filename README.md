@@ -143,10 +143,18 @@ src/main/resources/
 
 ## 📜 Créditos
 
-| Projeto | Autor |
-|---|---|
-| Naruto Anime Mod 0.9.17 (1.7.10) | **Mathioks** |
-| NarutoMod 1.20 — referência das teclas (MIT) | **Sekwah41** |
-| Naruto / Naruto Shippuden | **Masashi Kishimoto** |
+**Este port só existe graças ao trabalho destas pessoas — créditos obrigatórios em qualquer cópia ou redistribuição:**
 
-Projeto de fã, sem fins comerciais. Ver [LICENSE.md](LICENSE.md).
+| Pessoa | Contribuição |
+|---|---|
+| **Mathioks** | Criador do **Naruto Anime Mod** original (MC 1.7.10) — conteúdo, jutsus, itens, armas, armaduras, mobs e assets |
+| **ninjaespio1000** | Criador do **Naruto Anime Mod Plus+** — modificação/expansão do mod do Mathioks |
+| **Sekwah41** | Criador do **NarutoMod** (1.20) e **SekCLib** — referência do sistema de teclas C/V/B (licença MIT) |
+| **Masashi Kishimoto** | Criador de **Naruto / Naruto Shippuden** |
+| **willianstriker** | Port para Minecraft 26.3 / Forge 66, motor de combos, conquistas e interface |
+
+## ⚖️ Licença — código aberto (MIT)
+
+O código deste repositório é **livre**: qualquer pessoa pode **usar, copiar, modificar e redistribuir**, desde que mantenha os créditos acima. Ver [LICENSE.md](LICENSE.md).
+
+> Projeto de fã, sem fins comerciais. Os assets originais (texturas, modelos, sons) pertencem ao Mathioks e ao Sekwah41 — procure os autores antes de reutilizá-los comercialmente.
