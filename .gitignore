@@ -23,3 +23,12 @@ crash-reports/
 .DS_Store
 Thumbs.db
 *.log
+
+# --- Seguranca: nunca commitar tokens/chaves ---
+.gh_token
+gh_token
+*.token
+.env
+.env.*
+secrets/
+credentials.json
