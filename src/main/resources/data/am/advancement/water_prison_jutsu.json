@@ -1,0 +1,31 @@
+{
+  "parent": "am:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:paper"
+    },
+    "title": {
+      "translate": "adv.am.water_prison_jutsu.title"
+    },
+    "description": {
+      "translate": "adv.am.water_prison_jutsu.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cast": {
+      "trigger": "am:cast_jutsu",
+      "conditions": {
+        "jutsu": "water_prison_jutsu"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cast"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

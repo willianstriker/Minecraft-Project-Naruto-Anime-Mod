@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[66,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="am"
+version="1.0.0"
+displayName="Naruto Anime Mod"
+authors="Mathioks (original 1.7.10), port 26.3"
+description='''
+Naruto Anime Mod portado para Minecraft 26.3 (Forge).
+Sistema de ativacao de jutsus por combinacao de teclas C / V / B (estilo Sekwah41), sem itens de talisma.
+'''
+
+[[dependencies.am]]
+    modId="forge"
+    mandatory=true
+    versionRange="[66,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.am]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[26.3,26.4)"
+    ordering="NONE"
+    side="BOTH"

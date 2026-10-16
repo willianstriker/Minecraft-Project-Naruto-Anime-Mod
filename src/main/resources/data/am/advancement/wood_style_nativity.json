@@ -1,0 +1,31 @@
+{
+  "parent": "am:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:paper"
+    },
+    "title": {
+      "translate": "adv.am.wood_style_nativity.title"
+    },
+    "description": {
+      "translate": "adv.am.wood_style_nativity.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cast": {
+      "trigger": "am:cast_jutsu",
+      "conditions": {
+        "jutsu": "wood_style_nativity"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cast"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

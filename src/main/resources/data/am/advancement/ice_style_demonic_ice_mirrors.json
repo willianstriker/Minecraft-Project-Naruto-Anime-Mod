@@ -1,0 +1,31 @@
+{
+  "parent": "am:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:paper"
+    },
+    "title": {
+      "translate": "adv.am.ice_style_demonic_ice_mirrors.title"
+    },
+    "description": {
+      "translate": "adv.am.ice_style_demonic_ice_mirrors.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cast": {
+      "trigger": "am:cast_jutsu",
+      "conditions": {
+        "jutsu": "ice_style_demonic_ice_mirrors"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cast"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

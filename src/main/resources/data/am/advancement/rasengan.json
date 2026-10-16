@@ -1,0 +1,31 @@
+{
+  "parent": "am:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:paper"
+    },
+    "title": {
+      "translate": "adv.am.rasengan.title"
+    },
+    "description": {
+      "translate": "adv.am.rasengan.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cast": {
+      "trigger": "am:cast_jutsu",
+      "conditions": {
+        "jutsu": "rasengan"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cast"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

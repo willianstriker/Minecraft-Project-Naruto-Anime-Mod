@@ -1,0 +1,31 @@
+{
+  "parent": "am:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:paper"
+    },
+    "title": {
+      "translate": "adv.am.lightning_blade.title"
+    },
+    "description": {
+      "translate": "adv.am.lightning_blade.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "cast": {
+      "trigger": "am:cast_jutsu",
+      "conditions": {
+        "jutsu": "lightning_blade"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cast"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
