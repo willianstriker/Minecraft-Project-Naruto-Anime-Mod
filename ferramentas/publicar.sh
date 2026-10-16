@@ -40,6 +40,12 @@ fi
 TOKEN="$(cat "${TOKEN_FILE}")"
 cd "${REPO_DIR}"
 
+# Se o 2o argumento nao for uma tag (v1.2.3), trata como mensagem de commit.
+if [[ -n "${TAG}" && ! "${TAG}" =~ ^v[0-9]+\.[0-9]+ ]]; then
+  TITULO="${TAG}"
+  TAG=""
+fi
+
 # --- commit + push ----------------------------------------------------------
 git config user.name  "willianstriker" >/dev/null
 git config user.email "willianstriker@users.noreply.github.com" >/dev/null
