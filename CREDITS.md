@@ -21,8 +21,8 @@ contribuiu com clãs, correções e conteúdo adicional que inspirou este port.
 
 - CurseForge: [Naruto Anime Mod Plus+](https://www.curseforge.com/minecraft/mc-mods/naruto-anime-mod-plus)
 
-### 🏆 Sekwah41 — o sistema de teclas
-Criador do **NarutoMod** (Minecraft 1.20) e do **SekCLib**.
+### 🏆 Sekwah41's — o sistema de teclas
+Criador do **Sekwah41's Naruto Mod** (Minecraft 1.20) e do **SekCLib**.
 O sistema de ativação de jutsus por **combinação de teclas C / V / B**, que este mod
 replica, é criação dele (licenciado em MIT — obrigado por deixar aberto!).
 
@@ -46,13 +46,13 @@ Criador de **Naruto** e **Naruto Shippuden**. Sem ele, nada disso existiria.
 ## Créditos citados nos arquivos originais
 
 - **The Forge and FML guys** — citados nos créditos do próprio Naruto Anime Mod (Mathioks)
-- **Orkwaagh** e **Mrs_Shadowz** — ex-membros da equipe de Sekwah41
+- **Orkwaagh** e **Mrs_Shadowz** — ex-membros da equipe do Sekwah41's
 
 ---
 
 ## Aviso
 
 - Projeto de fã, **sem fins comerciais**, sem vínculo com Mojang, Microsoft ou Kishimoto.
-- Os assets originais (texturas, modelos, sons) pertencem a **Mathioks** e **Sekwah41**.
+- Os assets originais (texturas, modelos, sons) pertencem a **Mathioks** e **Sekwah41's**.
   Antes de publicar em larga escala (CurseForge/Modrinth), procure os autores originais.
 - O código **deste repositório** é MIT — veja [LICENSE.md](LICENSE.md).

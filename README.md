@@ -20,7 +20,7 @@ Sistema de ativação de jutsus por **combinação de teclas C / V / B** — sem
 Este projeto **porta o Naruto Anime Mod 0.9.17 (Minecraft 1.7.10)** para a versão mais recente do Minecraft, com duas mudanças centrais pedidas pelo projeto:
 
 1. **Todos os itens de ativação de jutsu foram removidos** — nada de talismãs, pergaminhos ou papéis de natureza. Kunais, katanas, armaduras, headbands, ryo e pílulas **continuam** no mod.
-2. **A ativação agora é por combos de teclas**, no estilo do *Naruto Anime Mod do Sekwah41*: você tecla **C**, **V** e **B** na ordem do jutsu, e a **conquista correspondente mostra a combinação** necessária.
+2. **A ativação agora é por combos de teclas**, no estilo do *Sekwah41's Naruto Mod*: você tecla **C**, **V** e **B** na ordem do jutsu, e a **conquista correspondente mostra a combinação** necessária.
 
 ## 🎮 Como funciona
 
@@ -149,7 +149,7 @@ src/main/resources/
 |---|---|
 | **Mathioks** | Criador do **Naruto Anime Mod** original (MC 1.7.10) — conteúdo, jutsus, itens, armas, armaduras, mobs e assets |
 | **ninjaespio1000** | Criador do **Naruto Anime Mod Plus+** — modificação/expansão do mod do Mathioks |
-| **Sekwah41** | Criador do **NarutoMod** (1.20) e **SekCLib** — referência do sistema de teclas C/V/B (licença MIT) |
+| **Sekwah41's** | Criador do **Sekwah41's Naruto Mod** (1.20) e do **SekCLib** — referência do sistema de teclas C/V/B (licença MIT) |
 | **Masashi Kishimoto** | Criador de **Naruto / Naruto Shippuden** |
 | **willianstriker** | Port para Minecraft 26.3 / Forge 66, motor de combos, conquistas e interface |
 
@@ -157,4 +157,4 @@ src/main/resources/
 
 O código deste repositório é **livre**: qualquer pessoa pode **usar, copiar, modificar e redistribuir**, desde que mantenha os créditos acima. Ver [LICENSE.md](LICENSE.md).
 
-> Projeto de fã, sem fins comerciais. Os assets originais (texturas, modelos, sons) pertencem ao Mathioks e ao Sekwah41 — procure os autores antes de reutilizá-los comercialmente.
+> Projeto de fã, sem fins comerciais. Os assets originais (texturas, modelos, sons) pertencem ao Mathioks e ao Sekwah41's — procure os autores antes de reutilizá-los comercialmente.

@@ -15,7 +15,7 @@ import org.slf4j.Logger;
  *
  * <p>Diferença central em relação ao mod original (1.7.10): os itens de
  * ativação de jutsu foram removidos. A ativação agora é feita por combos
- * das teclas C / V / B (estilo Sekwah41), com página de conquistas.
+ * das teclas C / V / B (estilo Sekwah41's), com página de conquistas.
  */
 @Mod(NarutoAnimeMod.MODID)
 public final class NarutoAnimeMod {

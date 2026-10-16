@@ -14,7 +14,7 @@ import net.minecraftforge.event.TickEvent;
 
 /**
  * Cliente: teclas de jutsu C / V / B e leitura dos combos.
- * Mesmas teclas do mod de referência (Sekwah41): C=67, V=86, B=66.
+ * Mesmas teclas do mod de referência (Sekwah41's): C=67, V=86, B=66.
  */
 public final class NarutoKeys {
 

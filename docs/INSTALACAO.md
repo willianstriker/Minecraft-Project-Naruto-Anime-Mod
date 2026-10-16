@@ -1,6 +1,6 @@
 # Naruto Anime Mod — versão 26.3 (Forge)
 
-Port do **Naruto Anime Mod 0.9.17 (1.7.10, do Mathioks)** para **Minecraft 26.3 / Forge 66.0.12**, com o sistema de ativação de jutsus refeito no estilo **Sekwah41 (NarutoMod 1.20)**.
+Port do **Naruto Anime Mod 0.9.17 (1.7.10, do Mathioks)** para **Minecraft 26.3 / Forge 66.0.12**, com o sistema de ativação de jutsus refeito no estilo **Sekwah41's (Sekwah41's Naruto Mod 1.20)**.
 
 ---
 
@@ -19,7 +19,7 @@ Port do **Naruto Anime Mod 0.9.17 (1.7.10, do Mathioks)** para **Minecraft 26.3 
 
 ---
 
-## 🎮 O sistema de teclas (igual ao Sekwah41)
+## 🎮 O sistema de teclas (igual ao Sekwah41's)
 
 - **C** = 1 · **V** = 2 · **B** = 3
 - Digite a sequência e o jutsu dispara ~0,2 s depois (configurável em `config/am-common.toml`)

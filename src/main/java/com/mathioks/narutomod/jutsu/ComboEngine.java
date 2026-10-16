@@ -3,7 +3,7 @@ package com.mathioks.narutomod.jutsu;
 import java.util.*;
 
 /**
- * Motor de combos de teclas C / V / B (estilo Sekwah41 / Naruto Anime Mod 1.20).
+ * Motor de combos de teclas C / V / B (estilo Sekwah41's / Naruto Anime Mod 1.20).
  *
  * <p>Algoritmo (replicado do mod de referência, adaptado e testável):
  * <ol>

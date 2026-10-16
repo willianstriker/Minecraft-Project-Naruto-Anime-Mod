@@ -6,11 +6,11 @@ license="MIT"
 modId="am"
 version="1.0.0"
 displayName="Naruto Anime Mod"
-authors="Mathioks, ninjaespio1000, Sekwah41, willianstriker"
-credits="Naruto Anime Mod original (1.7.10) por Mathioks | Naruto Anime Mod Plus+ por ninjaespio1000 | Sistema de teclas C/V/B referenciado do NarutoMod por Sekwah41 | Naruto criado por Masashi Kishimoto | Port 26.3 por willianstriker"
+authors="Mathioks, ninjaespio1000, Sekwah41's, willianstriker"
+credits="Naruto Anime Mod original (1.7.10) por Mathioks | Naruto Anime Mod Plus+ por ninjaespio1000 | Sistema de teclas C/V/B referenciado do NarutoMod por Sekwah41's | Naruto criado por Masashi Kishimoto | Port 26.3 por willianstriker"
 description='''
 Naruto Anime Mod portado para Minecraft 26.3 (Forge).
-Sistema de ativacao de jutsus por combinacao de teclas C / V / B (estilo Sekwah41), sem itens de talisma.
+Sistema de ativacao de jutsus por combinacao de teclas C / V / B (estilo Sekwah41's), sem itens de talisma.
 '''
 
 [[dependencies.am]]
